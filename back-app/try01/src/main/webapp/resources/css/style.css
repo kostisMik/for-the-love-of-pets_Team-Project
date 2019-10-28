@@ -1,0 +1,19 @@
+body{
+   line-height: 2;
+}
+.navbar{
+    background-color:#52725b;
+    padding-bottom: 2px;
+
+    font-weight: 600;
+    
+}
+
+li{
+    margin-left:20px;
+}
+
+ul{
+    margin-left: 50%;
+}
+
