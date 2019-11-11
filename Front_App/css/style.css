@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*!
  * Start Bootstrap - Agency v5.2.2 (https://startbootstrap.com/template-overviews/agency)
  * Copyright 2013-2019 Start Bootstrap
@@ -749,3 +750,49 @@ ul.social-buttons li a {
 
 
 
+=======
+body{
+
+    line-height: 2;
+ }
+ .navbar{
+     background-color:#52725b98;
+     padding-bottom: 2px;
+     font-weight: 600;
+     
+ }
+ 
+ li{
+     margin-left:20px;
+     
+ }
+ a{
+     color: antiquewhite !important;
+ }
+ 
+ ul{
+     margin-left: 50%;
+ }
+ 
+ * {
+     box-sizing: border-box;
+ }
+ 
+ header {
+     background-image:linear-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.137)), url(/for-the-love-of-pets_Team-Project/Front_App/css/images/anoir-chafik-2_3c4dIFYFU-unsplash.jpg);
+     background-size: cover;
+     background-position: center;
+     height: 100vh;
+     background-attachment: fixed;
+     
+  }
+ 
+  .intro-lead-in,
+  .intro-heading {
+     display:flex;
+     justify-content: center;
+     color: antiquewhite;
+     font-size: 
+ }
+ 
+>>>>>>> 60b9be6e6b6f8a3218860c31b84b56bc07d1a6b8
