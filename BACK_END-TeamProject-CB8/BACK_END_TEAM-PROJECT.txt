@@ -8,10 +8,9 @@
 		>> would benefit to be a link so as to begin the "controller path" from a get request and everything POSTED from there.
 		>> (...write other here...)
 
-	2) get consultation on working with POSTMAN from the beginning.
 
 
-	3) CONSIDER header and footer being autonomous and load from .jsp.
+	2) CONSIDER header and footer being autonomous and load from .jsp.
 
 
 	https://projects.spring.io/spring-petclinic/ <----- SOS+ARA for back-end approach.

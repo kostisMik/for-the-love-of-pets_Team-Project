@@ -49,3 +49,9 @@
 11) O επισκέπτης/χρήστης θα μπορεί να επιλέξει να διαθέσει ένα ποσό της επιλογής του, το οποίο διοχετεύεται σε ποικίλες διαδικασίες βελτίωσης της ποιότητας ζωής tou zwou.
 
 
+
+
+username: PETDBuser
+pass: PETDBju!%
+
+jdbc:mysql://ra1.anystream.eu:5420/PETDB?useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
