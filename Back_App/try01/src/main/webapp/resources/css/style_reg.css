@@ -175,7 +175,7 @@ section#contact h3 {
 
 section#contact {
     background-color: #734E60;
-    background-image: linear-gradient(rgba(8, 8, 8, 0.212), rgba(0, 0, 0, 0.609)), url("/img/registration/jamie-street-UtrE5DcgEyg-unsplash.jpg");
+    background-image: linear-gradient(rgba(8, 8, 8, 0.212), rgba(0, 0, 0, 0.609)), url("/PawSociety/img/registration/jamie-street-UtrE5DcgEyg-unsplash.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -289,3 +289,10 @@ ul.social-buttons li a {
 .ion-logo-facebook, .ion-logo-twitter, .ion-logo-googleplus, .ion-logo-instagram {
     transition: color 0.15s;
 }
+
+#logo_animated{
+
+    height: 45px;
+    width: auto;
+   
+  }

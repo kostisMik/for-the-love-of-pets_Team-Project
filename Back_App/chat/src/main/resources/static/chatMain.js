@@ -6,7 +6,6 @@
 
 /* global Stomp */
 
-'use strict';
 var usernamePage = document.querySelector("#username-page");
 var chatPage = document.querySelector("#chat-page");
 var usernameForm = document.querySelector("#usenameForm");
@@ -23,7 +22,9 @@ var colors = [
     '#ffc107', '#ff85af', '#FF9800', '#39bbb0'
 ];
 
+
 // The Connect "event" 
+// const connection = new WebSocket('ws://localhost:8080');
 /* The connect() function uses SockJS
   and Stomp client to connect to the 
  " /ws " endpoint that we configured( see config package ).
