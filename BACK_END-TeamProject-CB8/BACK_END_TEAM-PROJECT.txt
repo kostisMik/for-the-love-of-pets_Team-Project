@@ -1,0 +1,24 @@
+	
+
+	YA MENA : 
+
+	question to team: 
+	1) register / login : 
+		>> ? what form will it have?
+		>> would benefit to be a link so as to begin the "controller path" from a get request and everything POSTED from there.
+		>> (...write other here...)
+
+
+
+	2) CONSIDER header and footer being autonomous and load from .jsp.
+
+
+	https://projects.spring.io/spring-petclinic/ <----- SOS+ARA for back-end approach.
+
+	https://nickjanetakis.com/blog/how-to-start-and-finish-any-web-app-project
+	
+	https://www.infoq.com/minibooks/spring-boot-building-api-backend/
+
+	https://www.springboottutorial.com/spring-boot-react-full-stack-crud-maven-application
+
+	https://www.google.com/search?q=how+to+start+designing+the+back+end+of+a+spring+boot+project&oq=how+to+start+designing+the+back+end+of+a+spring+boot+project&aqs=chrome..69i57.10035j0j7&sourceid=chrome&ie=UTF-8

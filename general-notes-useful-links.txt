@@ -1,0 +1,35 @@
+colors picked by -> https://colorhunt.co/palette/120121
+
+
+
+_______________________
+TRAINER'S TIPS 
+-----------------------
+ By Spyro :
+
+- sophisticated search. more than name and ids, behavior of animal, usual habits, natural habitat.
+- all above in PROPERTIESof pets.
+- adopted and homebred pets(ston xwro mas) should be apart.
+- specific vacancies (good start 50).
+
+- jQuery has ready-made calendars and marks days and dates. (available and whatnot for reservations).
+
+- separate animals with an extra column that specifies if it IS or NOT for adoption or hosting.
+- take care of photos. don't need to load them in db.
+
+- if someone finds a stray?
+
+NAVBAR model: ADOPTION | HOSTING | I FOUND STRAY.
+
+- user ticks , marks or whteverpoints on map where strays were found ( and we found them ).
+
+
+we need ADMIN to do the crud.
+we need user to be able and adopt and host ( no need for further roles, nicee !! ).
+
+-there may be different admins(doctorAdmin_ for Example).
+
+we need to specify the whole of the place as an ENTITY (its destination).
+
+/END OF TRAINER's TIPS
+_______________________
