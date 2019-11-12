@@ -11,12 +11,12 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Paw Society</title>
         <!-- CUSTOM CSS RULES -->
-        <link href="/resources/css/style.css" rel="stylesheet">
+        <link href="resources/css/style.css" rel="stylesheet">
         <!-- BOOTSTRAP CORE CSS -->
-        <link href="/resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <!-- CUSTOM FONTS FOR THE TEMPLATE -->
         <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-        <link href="/resources/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="resources/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
