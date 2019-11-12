@@ -10,10 +10,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-        <link href="css/style.css" rel="stylesheet">
+        <link href="resources/css/style.css" rel="stylesheet">
     </head>
     <body>
         <h1>HELLO PETS</h1>
         <a href="login">ADMIN PRESS HERE</a>
+        <img src="resources/css/images/anoir-chafik-2_3c4dIFYFU-unsplash.jpg">
     </body>
 </html>

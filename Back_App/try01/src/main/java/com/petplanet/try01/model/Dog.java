@@ -64,6 +64,7 @@ public class Dog implements Serializable {
     @Basic(optional = false)
     @NotNull
     @Column(name = "shelter_dog")
+    // (DELETE)
     private int shelterDog;
     @Size(max = 25)
     @Column(name = "birthdate")

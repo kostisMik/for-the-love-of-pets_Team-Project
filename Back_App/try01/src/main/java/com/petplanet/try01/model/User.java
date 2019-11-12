@@ -57,6 +57,7 @@ public class User implements Serializable {
     @NotNull
     @Size(min = 1, max = 45)
     @Column(name = "username")
+    // (DELETE)
     private String username;
     @Basic(optional = false)
     @NotNull
@@ -70,6 +71,7 @@ public class User implements Serializable {
     @Basic(optional = false)
     @NotNull
     @Column(name = "telephone")
+    // (DELETE)
     private int telephone;
 
     public User() {
@@ -158,10 +160,7 @@ public class User implements Serializable {
             return false;
         }
         User other = (User) object;
-        if ((this.userId == null && other.userId != null) || (this.userId != null && !this.userId.equals(other.userId))) {
-            return false;
-        }
-        return true;
+        return !((this.userId == null && other.userId != null) || (this.userId != null && !this.userId.equals(other.userId)));
     }
 
     @Override
