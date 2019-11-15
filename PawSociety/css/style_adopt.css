@@ -1,9 +1,14 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     overflow-x: hidden;
     font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 p {
+    
     line-height: 1.75;
 }
 
@@ -27,6 +32,9 @@ a {
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+h4{
+    color:black !important;
 }
 
 .page-section {
@@ -87,14 +95,15 @@ img::-moz-selection {
 }
 
 .btn-primary {
-    background-color: #4E734E;
-    border-color: #4E734E;
+    background-color: #BF5C8E;
+    border-color: #BF5C8E;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-    background-color: #95BF95 !important;
-    border-color: #95BF95 !important;
+    background-color: #bf5a8cee !important;
+    border-color: #bf5a8cee !important;
     color: white;
+  
 }
 
 .btn-primary:active, .btn-primary:focus {
@@ -295,4 +304,8 @@ ul.social-buttons li a {
     height: 45px;
     width: auto;
    
+  }
+
+  #find-dog{
+      background-color: rgba(78, 115, 78, 0.404);
   }
