@@ -247,7 +247,7 @@
         </section>
 
         <!-- Contact -->
-
+        <section>
         <div class="container-fluid">
             <div class="row">
                 <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50434.35520050646!2d23.865862620127775!3d37.81002097830332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1925cede00b33%3A0x30dee17ff02fcef8!2zzprOsc67z43Oss65zrEgzpjOv8-BzrnOus6_z40gMTkwIDEw!5e0!3m2!1sel!2sgr!4v1573323030083!5m2!1sel!2sgr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
