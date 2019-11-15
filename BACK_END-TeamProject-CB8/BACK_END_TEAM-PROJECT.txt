@@ -22,3 +22,40 @@
 	https://www.springboottutorial.com/spring-boot-react-full-stack-crud-maven-application
 
 	https://www.google.com/search?q=how+to+start+designing+the+back+end+of+a+spring+boot+project&oq=how+to+start+designing+the+back+end+of+a+spring+boot+project&aqs=chrome..69i57.10035j0j7&sourceid=chrome&ie=UTF-8
+
+
+
+12/11/2019
+
+how to delete entity back end and db
+
+in role class ENUM the admin attribute ( user, admin )
+
+https://stackoverflow.com/questions/37615034/spring-security-spring-boot-how-to-set-roles-for-users
+
+
+https://www.javaprogrammingforums.com/java-ides/15818-creating-admin-normal-users.html
+
+
+AN EXTRA CLASS ADMIN THAT EXTENDS USER (MAKE A METHOD IN USER GIVE_PRIVILEGES) AND IMPLMENTS METHOD WHILE OVERRIDING EVERYTHING ELSE SO AS TO HAVE FULL ACCESS. THEN MOVE ON LOGIN OF SAID ADMIN. HIS SUCCESSFUL LOGIN, OPENS UP FULL-ACCESS SITE. SUCCESFUL LOGIN OF A USER LANDS ON mainPAGE
+
+
+http://codeomitted.com/spring-tag-jsp-form-reference/
+
+
+
+ng-checked
+
+window.addEventListener("offline", ()=> console.log("offline"));
+
+window.addEventListener("online", ()=> console.log("online")); 
+
+
+const App = angular.module("App", [] );
+App.controller = ("MainCtrl", function($scope){
+...
+});
+
+
+
+<- || ΝΑ ΠΑΣ ΘΕΡΑΠΕΙΑ || ->
