@@ -13,10 +13,9 @@
         <!-- CUSTOM CSS RULES -->
         <link href="resources/css/style.css" rel="stylesheet">
         <!-- BOOTSTRAP CORE CSS -->
-        <link href="resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- CUSTOM FONTS FOR THE TEMPLATE -->
         <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-        <link href="resources/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
@@ -28,7 +27,7 @@
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <img id="logo_animated" src="/PawSociety/img/logos/logo_animated.gif" alt="logo">
+                <img id="logo_animated" src="resources/img/logos/logo_animated.gif" alt="animated-logo">
                 <a class="navbar-brand js-scroll-trigger logo" href="#page-top">Paw Society</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -248,7 +247,7 @@
         </section>
 
         <!-- Contact -->
-
+        <section>
         <div class="container-fluid">
             <div class="row">
                 <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50434.35520050646!2d23.865862620127775!3d37.81002097830332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1925cede00b33%3A0x30dee17ff02fcef8!2zzprOsc67z43Oss65zrEgzpjOv8-BzrnOus6_z40gMTkwIDEw!5e0!3m2!1sel!2sgr!4v1573323030083!5m2!1sel!2sgr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
@@ -358,8 +357,16 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
-
+    
+    <!-- KOSTIS  ALTERNATIVE CDNs ( if above dont work ) 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    -->
+    <!-- Optional JavaScript -->
+    <!-- NOTE: jQuery first, then Popper.js, then Bootstrap JS -->
 
 </body>
+
 
 </html>
