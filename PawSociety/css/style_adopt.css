@@ -39,6 +39,7 @@ h4{
 
 .page-section {
     padding: 100px 0;
+    background-color:  rgba(198, 212, 221, 0.377) ;
 }
 
 .page-section h2.section-heading {
@@ -307,5 +308,10 @@ ul.social-buttons li a {
   }
 
   #find-dog{
-      background-color: rgba(78, 115, 78, 0.404);
+      background-color: rgba(179, 216, 179, 0.377);
+  }
+
+  .card-img-top{
+    max-height:250px;
+    height: 250px;
   }
