@@ -59,3 +59,23 @@ App.controller = ("MainCtrl", function($scope){
 
 
 <- || ΝΑ ΠΑΣ ΘΕΡΑΠΕΙΑ || ->
+
+
+<LOGIN NOTES>
+
+
+logback-classic I need
+jetty plugin de to thelw
+
+
+
+
+when user logins sthn post mapping submit ton vazeis se session
+i methodos pairnei oti h http session, ekei epalitehfvei me bcrypt,
+invalidate logout
+
+get mapping about us sto signature vale na pairnei session.getAttribute
+
+an o user einai null kanton redirect sthn login 
+
+</LOGIN NOTES>
