@@ -194,7 +194,7 @@ header.masthead {
   text-align: center;
   color: white;
   height: 120vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.349),rgba(0, 0, 0, 0.377)) , url("../img/3dogs.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.349),rgba(0, 0, 0, 0.377)) , url("../images/3dogs.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -243,7 +243,7 @@ header.masthead .intro-text .intro-heading {
   }
 }
 section#services{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.322),rgba(0, 0, 0, 0.76)) , url("../img/ipet-photo-T-0EW-SEbsE-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.322),rgba(0, 0, 0, 0.76)) , url("../images/ipet-photo-T-0EW-SEbsE-unsplash.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position:  center;
@@ -489,7 +489,7 @@ section#contact h3{
 
 section#contact {
   background-color: #734E60;
-  background-image: linear-gradient(rgba(115, 78, 96, 0.609),rgba(0, 0, 0, 0.466)) , url("../img/map-image.png");
+  background-image: linear-gradient(rgba(115, 78, 96, 0.609),rgba(0, 0, 0, 0.466)) , url("../images/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
 }
