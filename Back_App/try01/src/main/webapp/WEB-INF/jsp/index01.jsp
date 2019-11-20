@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="spring"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -39,23 +40,23 @@
                     <ul class="navbar-nav text-uppercase ml-auto">
                         <li class="nav-item">
                             <!--  TO_DO CONTROLLER -->
-                            <a class="nav-link js-scroll-trigger bar-li" href="#about">About us</a>
+                            <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/about">About us</a>
                         </li>
                         <li class="nav-item">
                             <!--  TO_DO CONTROLLER -->
-                            <a class="nav-link js-scroll-trigger bar-li" href="adopt.html">Adopt</a>
+                            <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/adopt">Adopt</a>
                         </li>
                         <li class="nav-item">
                             <!--  TO_DO CONTROLLER ( OPENS PAYPAL SANDBOX ) - Use for validation of login too  -->
                             <a class="nav-link js-scroll-trigger bar-li" href="#">Donate</a>
                         </li>
                         <li class="nav-item">
-                            <!--  TO_DO CONTROLLER -->
-                            <a class="nav-link js-scroll-trigger bar-li" href="registration.html">Register</a>
+                            <!--  RegLogin CONTROLLER -->
+                            <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/register">Register</a>
                         </li>
                         <li class="nav-item">
                             <!--  TO_DO CONTROLLER -->
-                            <a class="nav-link js-scroll-trigger bar-li" href="#">Log in</a>
+                            <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/login">Log in</a>
                         </li>
                     </ul>
                 </div>
