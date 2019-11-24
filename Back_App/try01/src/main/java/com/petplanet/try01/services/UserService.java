@@ -14,24 +14,12 @@ import java.util.List;
  */
 public interface UserService {
     
-    User findById(Long id);
+    public void insertUser( User u );
     
-    User findByFirstName(String firstName);
+    public Iterable<User> getUsers();
     
-    User findByLastName(String lastName);
+    public List<User> findUserByFirstName( String firstname );
     
-    User findByEmail(String email);
-    
-    void saveUser(User user);
-    
-    void updateUser(User user);
-    
-    void deleteUserById(Long id);
-    
-    void deleteAllUsers();
-    
-    List<User> findAllUsers();
-    
-    boolean isUserExist(User user);
+    public User findUserByEmail(String email);
     
 }

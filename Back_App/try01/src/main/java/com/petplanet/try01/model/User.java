@@ -41,31 +41,27 @@ public class User implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
-    @Column(name = "user_id")
+    @Column(name = "user_id", columnDefinition = "serial")
     private Integer userId;
     @Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 45)
+    
     @Column(name = "firstname")
     private String firstname;
     @Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 45)
+    
     @Column(name = "lastname")
     private String lastname;
     @Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 45)
+   
     @Column(name = "username")
     // (DELETE)
     private String username;
     @Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 45)
+    
     @Column(name = "password")
     private String password;
     // @Pattern(regexp="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?", message="Invalid email")//if the field contains email address consider using this annotation to enforce field validation
-    @Size(max = 60)
+    
     @Column(name = "email")
     private String email;
     @Basic(optional = false)
