@@ -74,7 +74,7 @@
             <div class="container">
                 <div class="intro-text">
                     <div class="intro-lead-in">Every dog needs a home!
-
+                         <!-- Pou paei auto? -->
                         <a class="btn btn-primary btn-xl js-scroll-trigger" href="#find-dog">Find your dog</a>
                     </div>
                 </div>
