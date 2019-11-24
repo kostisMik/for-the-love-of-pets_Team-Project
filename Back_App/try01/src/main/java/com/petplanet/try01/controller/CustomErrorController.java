@@ -38,6 +38,9 @@ public class CustomErrorController implements ErrorController {
             } else if( statusCode == HttpStatus.INTERNAL_SERVER_ERROR.value() ){
                 
                 return "500Page";
+            } else if ( statusCode == HttpStatus.METHOD_NOT_ALLOWED.value() ){
+                
+                return "405Page";
             }
         }      
         return "error";
