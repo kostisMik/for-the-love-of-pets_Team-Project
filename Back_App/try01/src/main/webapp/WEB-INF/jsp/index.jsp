@@ -5,7 +5,6 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@taglib uri="http://www.springframework.org/tags/form" prefix="spring"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -41,24 +40,42 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
                         <li class="nav-item">
+<<<<<<< HEAD
                             <!--  TO-DO CONTROLLER -->
                             <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/about">About us</a>
                         </li>
                         <li class="nav-item">
                             <!--  !DONE! ADOPT CONTROLLER -->
                             <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/adopt">Adopt</a>
+=======
+                            <!--  TO_DO CONTROLLER -->
+                            <a class="nav-link js-scroll-trigger bar-li" href="#about">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <!--  TO_DO CONTROLLER -->
+                            <a class="nav-link js-scroll-trigger bar-li" href="adopt.html">Adopt</a>
+>>>>>>> 712b0ab0d9c886c6c43feeb4bed7ddfbf89e120f
                         </li>
                         <li class="nav-item">
                             <!--  TO-DO CONTROLLER ( OPENS PAYPAL SANDBOX ) - Use for validation of login too  -->
                             <a class="nav-link js-scroll-trigger bar-li" href="#">Donate</a>
                         </li>
                         <li class="nav-item">
+<<<<<<< HEAD
                             <!--  INSERT CONTROLLER -->
                             <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/register">Register</a>
                         </li>
                         <li class="nav-item">
                             <!--   ( LOGIN ) HERE SPRING SECURITY -->
                             <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/login">Log in</a>
+=======
+                            <!--  TO_DO CONTROLLER -->
+                            <a class="nav-link js-scroll-trigger bar-li" href="registration.html">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <!--  TO_DO CONTROLLER -->
+                            <a class="nav-link js-scroll-trigger bar-li" href="#">Log in</a>
+>>>>>>> 712b0ab0d9c886c6c43feeb4bed7ddfbf89e120f
                         </li>
                     </ul>
                 </div>
