@@ -98,13 +98,13 @@ img::-moz-selection {
 }
 
 .btn-xl {
-  font-size: 18px;
-  padding: 20px 40px;
+  font-size: 18px !important;
+  padding: 20px 40px !important;
 }
 
 .btn-primary {
-  background-color: #BF5C8E;
-  border-color: #BF5C8E;
+  background-color: rgb(191, 92, 142)!important;
+  border-color: rgb(191, 92, 142) !important;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {

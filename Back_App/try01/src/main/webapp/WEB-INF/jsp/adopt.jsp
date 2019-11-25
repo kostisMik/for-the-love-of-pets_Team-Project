@@ -12,9 +12,6 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-
         <title>Adoption</title>
 
         <!-- Bootstrap core CSS -->
@@ -22,7 +19,7 @@
 
         <!-- Custom fonts for this template -->
         <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-        <link href="resources/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
@@ -49,19 +46,19 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger bar-li" href="index.html#about">About us</a>
+                            <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/#about">About us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger bar-li" href="adopt.html">Adopt</a>
+                            <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/adopt">Adopt</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger bar-li" href="#">Donate</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger bar-li" href="registration.html">Register</a>
+                            <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/register">Register</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger bar-li" href="#">Log in</a>
+                            <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/login">Log in</a>
                         </li>
                     </ul>
                 </div>
@@ -74,10 +71,10 @@
             <div class="container">
                 <div class="intro-text">
                     <div class="intro-lead-in">Every dog needs a home!
-                         <!-- Pou paei auto? -->
-                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#find-dog">Find your dog</a>
+                        <!-- Pou paei auto? -->
                     </div>
                 </div>
+                <a class="btn btn-primary btn-xl js-scroll-trigger" href="#find-dog">Find your dog</a>
             </div>
 
         </header>
@@ -96,7 +93,7 @@
                 <div class="row text-center">
                     <div class="col-md-8">
 
-                        <p class="text-muted">It’s a fact that the population of pets in the world exceeds the number of
+                        <p class="text-muted adopt-context">It’s a fact that the population of pets in the world exceeds the number of
                             families who can take them in.
                             Many animals then are found abandoned, helplessly wondering the streets and end up struggling
                             for survival or simply don’t make it through.
@@ -108,15 +105,15 @@
                         </p><br>
                     </div>
                     <div class="col-md-4">
-                        <img class="rounded-circle img-fluid" src="img/adoption/flower-dog.jpg" alt="">
+                        <img class="rounded-circle img-fluid" src="resources/images/adoption/flower-dog.jpg" alt="">
                     </div>
 
                     <div class="col-md-4">
-                        <img class="rounded-circle img-fluid" src="img/adoption/blanket-dog.jpg" alt="">
+                        <img class="rounded-circle img-fluid" src="resources/images/adoption/blanket-dog.jpg" alt="">
                     </div>
                     <div class="col-md-8">
 
-                        <p class="text-muted">It’s a fact that the population of pets in the world exceeds the number of
+                        <p class="text-muted adopt-context">It’s a fact that the population of pets in the world exceeds the number of
                             families who can take them in.
                             Many animals then are found abandoned, helplessly wondering the streets and end up struggling
                             for survival or simply don’t make it through.
@@ -142,144 +139,361 @@
                     </div>
                 </div>
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="tab-content" id="nav-tabContent">
-                                <div class="tab-pane fade show active" id="nav-brand" role="tabpanel"
-                                     aria-labelledby="nav-brand-tab">
-                                    <div class="row py-5 my-4">
-                                        <div class="col-md-12">
-                                            <div class="card-body">
-                                                <div class="row pb-2">
-                                                    <div class="col-md-12">
-                                                        <h4>Pick your creteria</h4>
-                                                    </div>
-                                                </div>
-                                                <div class="row ">
-                                                    <div class="col-md-3">
-                                                        <div class="form-group">
-                                                            <select id="inputState" class="form-control">
-                                                                <option selected>... Select Gender...</option>
-                                                                <option>Male</option>
-                                                                <option>Female</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <div class="form-group">
-                                                            <select id="inputState" class="form-control">
-                                                                <option selected>... Select Size...</option>
-                                                                <option>Toy</option>
-                                                                <option>Small</option>
-                                                                <option>Medium</option>
-                                                                <option>Large</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <button type="button" class="btn btn-primary btn-block">Search</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                    <div class="row py-2">
+                        <div class="col-md-3 vertical-box">
+                            <div class="card">
+                                <img class="card-img-top mh200-text "
+                                     src="resources/images/adoption/dias.jpg"
+                                     alt="Dog image">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Dias</h4>
+                                    <button type="button" class="btn btn-primary btn-block">Meet him
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <!-- <div class="row py-2">
-                        <div class="col-md-12">
-                            <h4>We found 1 car according to your search criteria</h4>
+                        <div class="col-md-3 vertical-box">
+                            <div class="card">
+                                <img class="card-img-top mh200-text"
+                                     src="resources/images/adoption/kira.jpg"
+                                     alt="Card image">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Kira</h4>
+                                    <button type="button" class="btn btn-primary btn-block">Meet her
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div> -->
+                        <div class="col-md-3 vertical-box">
+                            <div class="card">
+                                <img class="card-img-top mh200-text"
+                                     src="resources/images/adoption/shagar.jpg"
+                                     alt="Card image">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Shagar</h4>
+                                    <button type="button" class="btn btn-primary btn-block">Meet him
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 vertical-box">
+                            <div class="card">
+                                <img class="card-img-top mh200-text"
+                                     src="resources/images/adoption/haris.jpg"
+                                     alt="Card image">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Haris</h4>
+                                    <button type="button" class="btn btn-primary btn-block">Meet him</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                     <div class="row py-2">
                         <div class="col-md-3 vertical-box">
                             <div class="card">
                                 <img class="card-img-top mh200-text"
-                                     src="https://img2.gaadicdn.com/images/usedcarimages/320x224/11-2017/1843403/IMG_6603.jpg"
-                                     alt="Card image">
+                                     src="resources/images/adoption/vilma4.jpg.1920x0_q85.jpg"
+                                     alt="Dog image">
                                 <div class="card-body">
-                                    <h4 class="card-title mw30-text">2006 Toyota Innova 2.5 V Diesel 7-seater
-                                        2006 Toyota Innova 2.5 V Diesel 7-se</h4>
-                                    <h5 class="card-text">Rs. 25.32 Lac*</h5>
-
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">44,114 Km</li>
-                                        <li class="list-inline-item">Petrol</li>
-                                        <li class="list-inline-item">Gurugram</li>
-                                    </ul>
-                                    <button type="button" class="btn btn-outline-danger">Contact
-                                        Sellers</button>
+                                    <h4 class="card-title text-center">Vilma</h4>
+                                    <button type="button" class="btn btn-primary btn-block">Meet him
+                                    </button>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 vertical-box">
                             <div class="card">
-                                <img class="card-img-top mh200-text"
-                                     src="https://img2.gaadicdn.com/images/usedcarimages/320x224/11-2017/1843403/IMG_6603.jpg"
+                                <img class="card-img-top text-center"
+                                     src="resources/images/adoption/anna.jpg"
                                      alt="Card image">
                                 <div class="card-body">
-                                    <h4 class="card-title mw30-text">2006 Toyota Innova 2.5 V Diesel 7-seater
-                                        2006 Toyota Innova 2.5 V Diesel 7-se</h4>
-                                    <h5 class="card-text">Rs. 25.32 Lac*</h5>
-
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">44,114 Km</li>
-                                        <li class="list-inline-item">Petrol</li>
-                                        <li class="list-inline-item">Gurugram</li>
-                                    </ul>
-                                    <button type="button" class="btn btn-outline-danger">Contact
-                                        Sellers</button>
+                                    <h4 class="card-title text-center">Anna</h4>
+                                    <button type="button" class="btn btn-primary btn-block">Meet her
+                                    </button>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 vertical-box">
                             <div class="card">
-                                <img class="card-img-top mh200-text"
-                                     src="https://img2.gaadicdn.com/images/usedcarimages/320x224/11-2017/1843403/IMG_6603.jpg"
+                                <img class="card-img-top text-center"
+                                     src="resources/images/adoption/Billy.jpg"
                                      alt="Card image">
                                 <div class="card-body">
-                                    <h4 class="card-title mw30-text">2006 Toyota Innova 2.5 V Diesel 7-seater
-                                        2006 Toyota Innova 2.5 V Diesel 7-se</h4>
-                                    <h5 class="card-text">Rs. 25.32 Lac*</h5>
-
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">44,114 Km</li>
-                                        <li class="list-inline-item">Petrol</li>
-                                        <li class="list-inline-item">Gurugram</li>
-                                    </ul>
-                                    <button type="button" class="btn btn-outline-danger">Contact
-                                        Sellers</button>
+                                    <h4 class="card-title text-center">Billy</h4>
+                                    <button type="button" class="btn btn-primary btn-block">Meet him
+                                    </button>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 vertical-box">
                             <div class="card">
-                                <img class="card-img-top mh200-text"
-                                     src="https://img2.gaadicdn.com/images/usedcarimages/320x224/11-2017/1843403/IMG_6603.jpg"
+                                <img class="card-img-top text-center"
+                                     src="resources/images/adoption/Kali.jpg"
                                      alt="Card image">
                                 <div class="card-body">
-                                    <h4 class="card-title mw30-text">2006 Toyota Innova 2.5 V Diesel 7-seater
-                                        2006 Toyota Innova 2.5 V Diesel 7-se</h4>
-                                    <h5 class="card-text">Rs. 25.32 Lac*</h5>
-
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">44,114 Km</li>
-                                        <li class="list-inline-item">Petrol</li>
-                                        <li class="list-inline-item">Gurugram</li>
-                                    </ul>
-                                    <button type="button" class="btn btn-outline-danger">Contact
-                                        Sellers</button>
+                                    <h4 class="card-title text-center">Kali</h4>
+                                    <button type="button" class="btn btn-primary btn-block">Meet her</button>
                                 </div>
                             </div>
                         </div>
 
                     </div>
-                </div>
+                    <div class="row py-2">
+                        <div class="col-md-3 vertical-box">
+                            <div class="card">
+                                <img class="card-img-top mh200-text"
+                                     src="resources/images/adoption/artemis.jpg"
+                                     alt="Dog image">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Artemis</h4>
+                                    <button type="button" class="btn btn-primary btn-block">Meet her
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 vertical-box">
+                            <div class="card">
+                                <img class="card-img-top text-center"
+                                     src="resources/images/adoption/Athina.jpg"
+                                     alt="Card image">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Athina</h4>
+                                    <button type="button" class="btn btn-primary btn-block">Meet her
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 vertical-box">
+                            <div class="card">
+                                <img class="card-img-top text-center"
+                                     src="resources/images/adoption/barbie.png"
+                                     alt="Card image">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Barbie</h4>
+                                    <button type="button" class="btn btn-primary btn-block">Meet her
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 vertical-box">
+                            <div class="card">
+                                <img class="card-img-top text-center"
+                                     src="resources/images/adoption/Box.jpg"
+                                     alt="Card image">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Box</h4>
+                                    <button type="button" class="btn btn-primary btn-block">Meet him</button>
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
+                    <div class="row py-2">
+                        <div class="col-md-3 vertical-box">
+                            <div class="card">
+                                <img class="card-img-top mh200-text"
+                                     src="resources/images/adoption/Dora.jpg"
+                                     alt="Dog image">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Dora</h4>
+                                    <button type="button" class="btn btn-primary btn-block">Meet her
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 vertical-box">
+                            <div class="card">
+                                <img class="card-img-top text-center"
+                                     src="resources/images/adoption/hercules.jpg"
+                                     alt="Card image">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Hercules</h4>
+                                    <button type="button" class="btn btn-primary btn-block">Meet him
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 vertical-box">
+                            <div class="card">
+                                <img class="card-img-top text-center"
+                                     src="resources/images/adoption/Ice.jpg"
+                                     alt="Card image">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Ice</h4>
+                                    <button type="button" class="btn btn-primary btn-block">Meet him
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 vertical-box">
+                            <div class="card">
+                                <img class="card-img-top text-center"
+                                     src="resources/images/adoption/ilias.jpg"
+                                     alt="Card image">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Ilias</h4>
+                                    <button type="button" class="btn btn-primary btn-block">Meet him</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row py-2">
+                        <div class="col-md-3 vertical-box">
+                            <div class="card">
+                                <img class="card-img-top mh200-text"
+                                     src="resources/images/adoption/Loco2.jpg"
+                                     alt="Dog image">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Loco</h4>
+                                    <button type="button" class="btn btn-primary btn-block">Meet him
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 vertical-box">
+                            <div class="card">
+                                <img class="card-img-top text-center"
+                                     src="resources/images/adoption/magic.JPG"
+                                     alt="Card image">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Magic</h4>
+                                    <button type="button" class="btn btn-primary btn-block">Meet him
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 vertical-box">
+                            <div class="card">
+                                <img class="card-img-top text-center"
+                                     src="resources/images/adoption/maous (2).jpg"
+                                     alt="Card image">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Maous</h4>
+                                    <button type="button" class="btn btn-primary btn-block">Meet him
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 vertical-box">
+                            <div class="card">
+                                <img class="card-img-top text-center"
+                                     src="resources/images/adoption/marion.jpg"
+                                     alt="Card image">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Marion</h4>
+                                    <button type="button" class="btn btn-primary btn-block">Meet her</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row py-2">
+                        <div class="col-md-3 vertical-box">
+                            <div class="card">
+                                <img class="card-img-top mh200-text"
+                                     src="resources/images/adoption/misti.jpg"
+                                     alt="Dog image">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Misti</h4>
+                                    <button type="button" class="btn btn-primary btn-block">Meet her
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 vertical-box">
+                            <div class="card">
+                                <img class="card-img-top text-center"
+                                     src="resources/images/adoption/OSMAN.jpg..jpg"
+                                     alt="Card image">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Osman</h4>
+                                    <button type="button" class="btn btn-primary btn-block">Meet him
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 vertical-box">
+                            <div class="card">
+                                <img class="card-img-top text-center"
+                                     src="resources/images/adoption/popeye.jpg"
+                                     alt="Card image">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Popeye</h4>
+                                    <button type="button" class="btn btn-primary btn-block">Meet him
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 vertical-box">
+                            <div class="card">
+                                <img class="card-img-top text-center"
+                                     src="resources/images/adoption/richard.jpg"
+                                     alt="Card image">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Richard</h4>
+                                    <button type="button" class="btn btn-primary btn-block">Meet him</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row py-2">
+                        <div class="col-md-3 vertical-box">
+                            <div class="card">
+                                <img class="card-img-top mh200-text"
+                                     src="resources/images/adoption/rudy.jpg"
+                                     alt="Dog image">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Rudy</h4>
+                                    <button type="button" class="btn btn-primary btn-block">Meet him
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 vertical-box">
+                            <div class="card">
+                                <img class="card-img-top text-center"
+                                     src="resources/images/adoption/Sancy.jpg"
+                                     alt="Card image">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Sancy</h4>
+                                    <button type="button" class="btn btn-primary btn-block">Meet her
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 vertical-box">
+                            <div class="card">
+                                <img class="card-img-top text-center"
+                                     src="resources/images/adoption/singi.JPG"
+                                     alt="Card image">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Singi</h4>
+                                    <button type="button" class="btn btn-primary btn-block">Meet her
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 vertical-box">
+                            <div class="card">
+                                <img class="card-img-top text-center"
+                                     src="resources/images/adoption/Zagor!.jpg"
+                                     alt="Card image">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Zagor</h4>
+                                    <button type="button" class="btn btn-primary btn-block">Meet him</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
+
+
         </section>
 
 

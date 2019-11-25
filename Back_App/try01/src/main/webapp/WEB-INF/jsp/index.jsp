@@ -9,18 +9,23 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Paw Society</title>
-        <!-- CUSTOM CSS RULES -->
-        <link href="resources/css/style.css" rel="stylesheet">
+       
         <!-- BOOTSTRAP CORE CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
         <!-- CUSTOM FONTS FOR THE TEMPLATE -->
-        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
               type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+         
+        <!-- CUSTOM CSS RULES -->
+        <link href="resources/css/style.css" rel="stylesheet">
     </head>
     <body id="page-top">
 
@@ -40,42 +45,24 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
                         <li class="nav-item">
-<<<<<<< HEAD
                             <!--  TO-DO CONTROLLER -->
-                            <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/about">About us</a>
+                            <a class="nav-link js-scroll-trigger bar-li" href="#about">About us</a>
                         </li>
                         <li class="nav-item">
                             <!--  !DONE! ADOPT CONTROLLER -->
                             <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/adopt">Adopt</a>
-=======
-                            <!--  TO_DO CONTROLLER -->
-                            <a class="nav-link js-scroll-trigger bar-li" href="#about">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <!--  TO_DO CONTROLLER -->
-                            <a class="nav-link js-scroll-trigger bar-li" href="adopt.html">Adopt</a>
->>>>>>> 712b0ab0d9c886c6c43feeb4bed7ddfbf89e120f
                         </li>
                         <li class="nav-item">
                             <!--  TO-DO CONTROLLER ( OPENS PAYPAL SANDBOX ) - Use for validation of login too  -->
                             <a class="nav-link js-scroll-trigger bar-li" href="#">Donate</a>
                         </li>
                         <li class="nav-item">
-<<<<<<< HEAD
                             <!--  INSERT CONTROLLER -->
                             <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/register">Register</a>
                         </li>
                         <li class="nav-item">
                             <!--   ( LOGIN ) HERE SPRING SECURITY -->
                             <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/login">Log in</a>
-=======
-                            <!--  TO_DO CONTROLLER -->
-                            <a class="nav-link js-scroll-trigger bar-li" href="registration.html">Register</a>
-                        </li>
-                        <li class="nav-item">
-                            <!--  TO_DO CONTROLLER -->
-                            <a class="nav-link js-scroll-trigger bar-li" href="#">Log in</a>
->>>>>>> 712b0ab0d9c886c6c43feeb4bed7ddfbf89e120f
                         </li>
                     </ul>
                 </div>
@@ -88,7 +75,7 @@
                 <div class="intro-text pt3">
                     <div class="intro-lead-in">Every dog needs a home!</div>
                     <div class="intro-heading ">Do small things with great love...</div>
-                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Adopt now</a>
+                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="${pageContext.request.contextPath}/adopt">Adopt now</a>
                 </div>
             </div>
         </header>
@@ -108,7 +95,7 @@
                         <ul class="timeline">
                             <li>
                                 <div class="timeline-image">
-                                    <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
+                                    <img class="rounded-circle img-fluid" src="resources/images/about/1.jpg" alt="">
                                 </div>
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
@@ -124,7 +111,7 @@
                             </li>
                             <li class="timeline-inverted">
                                 <div class="timeline-image">
-                                    <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+                                    <img class="rounded-circle img-fluid" src="resources/images/about/2.jpg" alt="">
                                 </div>
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
@@ -139,7 +126,7 @@
                             </li>
                             <li>
                                 <div class="timeline-image">
-                                    <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+                                    <img class="rounded-circle img-fluid" src="resources/images/about/3.jpg" alt="">
                                 </div>
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
@@ -154,7 +141,7 @@
                             </li>
                             <li class="timeline-inverted">
                                 <div class="timeline-image">
-                                    <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
+                                    <img class="rounded-circle img-fluid" src="resources/images/about/4.jpg" alt="">
                                 </div>
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
