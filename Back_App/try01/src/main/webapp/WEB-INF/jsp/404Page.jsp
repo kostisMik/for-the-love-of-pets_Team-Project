@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>404 Page Not Found Error</title>
+        <title>JSP Page</title>
     </head>
     <body>
         <h1>OOPS -> 404 PROBLEMS!</h1>

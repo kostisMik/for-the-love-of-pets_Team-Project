@@ -68,11 +68,15 @@ public class MainController {
       user.setPassword(hashed);
       uService.insertUser(user);
       session.removeAttribute("userlogin");
-      user.setPassword(null);
+//      user.setPassword(null);
       session.setAttribute("userlogin", user);
       return "index";
   }
   
-
+  // THE LOGIN CONTROLLER 
+  @GetMapping( "/login" )
+    public String loginPage() {
+        return "login";
+    }
 
 }

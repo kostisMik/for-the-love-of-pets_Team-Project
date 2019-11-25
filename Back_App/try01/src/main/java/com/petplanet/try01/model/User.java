@@ -6,18 +6,12 @@
 package com.petplanet.try01.model;
 
 import java.io.Serializable;
-import java.util.HashSet;
-import java.util.Set;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
@@ -39,7 +33,8 @@ import javax.xml.bind.annotation.XmlRootElement;
     , @NamedQuery(name = "User.findByUsername", query = "SELECT u FROM User u WHERE u.username = :username")
     , @NamedQuery(name = "User.findByPassword", query = "SELECT u FROM User u WHERE u.password = :password")
     , @NamedQuery(name = "User.findByEmail", query = "SELECT u FROM User u WHERE u.email = :email")
-    , @NamedQuery(name = "User.findBySsoId", query = "SELECT u FROM User u WHERE u.ssoId = :ssoId")})
+    , @NamedQuery(name = "User.findBySsoId", query = "SELECT u FROM User u WHERE u.ssoId = :ssoId")
+    , @NamedQuery(name = "User.findByState", query = "SELECT u FROM User u WHERE u.state = :state")})
 public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -67,22 +62,11 @@ public class User implements Serializable {
     @Size(max = 45)
     @Column(name = "sso_id")
     private String ssoId;
-    
-    @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "user_role", 
-             joinColumns = { @JoinColumn(name = "user_id") }, 
-             inverseJoinColumns = { @JoinColumn(name = "role_id") })
-    private Set<Role> userRoles = new HashSet<Role>();
+    @Size(max = 45)
+    @Column(name = "state")
+    private String state;
 
     public User() {
-    }
-
-    public Set<Role> getUserRoles() {
-        return userRoles;
-    }
-
-    public void setUserRoles(Set<Role> userRoles) {
-        this.userRoles = userRoles;
     }
 
     public User(Integer userId) {
@@ -145,37 +129,37 @@ public class User implements Serializable {
         this.ssoId = ssoId;
     }
 
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
     @Override
     public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + userId;
-        result = prime * result + ((ssoId == null) ? 0 : ssoId.hashCode());
-        return result;
+        int hash = 0;
+        hash += (userId != null ? userId.hashCode() : 0);
+        return hash;
     }
 
     @Override
     public boolean equals(Object object) {
         // TODO: Warning - this method won't work in the case the id fields are not set
-        if (this == object)
-            return true;
-        if (object == null)
+        if (!(object instanceof User)) {
             return false;
-        if (!(object instanceof User))
-            return false;
+        }
         User other = (User) object;
-        if (userId != other.userId)
+        if ((this.userId == null && other.userId != null) || (this.userId != null && !this.userId.equals(other.userId))) {
             return false;
-        if (ssoId == null) {
-            if (other.ssoId != null)
-                return false;
-        } else if (!ssoId.equals(other.ssoId))
-            return false;
+        }
         return true;
     }
 
     @Override
     public String toString() {
         return "com.petplanet.try01.model.User[ userId=" + userId + " ]";
-    }   
+    }
+    
 }

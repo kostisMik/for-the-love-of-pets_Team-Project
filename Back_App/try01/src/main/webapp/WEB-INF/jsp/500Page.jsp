@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>500 Internal Server Error Page</title>
+        <title>JSP Page</title>
     </head>
     <body>
         <h1>Something went wrong! </h1>
