@@ -5,6 +5,8 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="spring"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,12 +21,10 @@
         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
               type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
-        
         <!-- Custom styles for this template -->
         <link href="css/style_admin.css" rel="stylesheet">
     </head>
     <body id="page-top">
-
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
@@ -57,7 +57,7 @@
                 </div>
             </div>
         </nav>
-        <!-- Dogs Array -->
+        <!-- ARRAY of the Dogs -->
         <section>
             <div class="table-responsive">
                 <table class="table table-bordered">
@@ -110,7 +110,6 @@
                 </table>
             </div>
         </section>
-
         <section>
         </section>
         <!-- Footer -->
@@ -136,7 +135,6 @@
                             <li class="list-inline-item">
                                 <a href="#">
                                     <i class="icon ion-logo-twitter"></i>
-
                                 </a>
                             </li>
                         </ul>
