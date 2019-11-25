@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>405 Method Not Allowed Error Page</title>
     </head>
     <body>
         <h2>405 Error! Did you Know? </h2>
