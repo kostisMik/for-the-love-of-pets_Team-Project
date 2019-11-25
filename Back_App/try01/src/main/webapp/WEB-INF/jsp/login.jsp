@@ -24,7 +24,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
 
         <!-- Custom styles for this template -->
-        <link href="resources/css/style_reg.css" rel="stylesheet">
+        <link href="resources/css/style_login.css" rel="stylesheet">
         <title>Log in</title>
     </head>
     <body>
@@ -71,15 +71,43 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
+<<<<<<< HEAD
                         <form action="${pageContext.request.contextPath}/adminLogged" modelAttribute="user" method="post">
                             Email:<input type="text"  class="form-control" placeholder="Email" required="required" name="email">
                             Password:<input type="password" class="form-control" placeholder="Password" required="required" name="password">
                             <input type="submit" value="submit">
                         </form>
+=======
+                        <spring:form modelAttribute="user" id="contactForm" name="Registration" action="${pageContext.request.contextPath}/inserted" method="POST" >
+                            <div class="row">
+                                <div class="col-md-12 maindiv">  
+                                        <div class="form-group">
+                                        <spring:label path="email"></spring:label>
+                                        <spring:input path="email" class="form-control" placeholder="Email" required="required"
+                                                      data-validation-required-message="Please enter your email address."></spring:input>
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="form-group">
+>>>>>>> be5c198f8f5f1fff2c84b7a6a72895d593ea7294
 
+                                        <spring:label path="password"></spring:label>
+                                        <spring:password path="password" class="form-control" placeholder="Password " required="required"
+                                                         data-validation-required-message="Please enter your password."></spring:password>
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+
+                                        <div class="clearfix"></div>
+                                        <div class="col-lg-12 text-center">
+                                            <div id="success"></div>
+
+                                            <input id="Submit" class="btn btn-primary btn-xl text-uppercase" type="submit" value="Submit">
+                                        </div>
+                                    </div>
+                            </spring:form>
+
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
 
         <!-- Footer -->
