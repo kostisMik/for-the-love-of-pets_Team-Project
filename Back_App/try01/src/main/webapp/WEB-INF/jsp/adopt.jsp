@@ -2,14 +2,11 @@
 <html lang="en">
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="spring"%>
-<<<<<<< HEAD
+
 <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Adoption</title>
     
     <!-- Bootstrap core CSS -->
@@ -88,7 +85,7 @@
                     <hr>
 
                     <h3 class="section-subheading text-muted ">Please adopt, Don't shop!</h3>
-=======
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -155,7 +152,7 @@
                     <div class="intro-lead-in">Every dog needs a home!
                         <!-- Pou paei auto? -->
                     </div>
->>>>>>> 8137739fcce63485e2546e2f1d7da58ad856b267
+
                 </div>
                 <a class="btn btn-primary btn-xl js-scroll-trigger" href="#find-dog">Find your dog</a>
             </div>
@@ -171,7 +168,7 @@
                 <div class="col-md-4">
                     <img class="rounded-circle img-fluid " src="img/adoption/flower-dog.jpg" alt="">
                 </div>
-<<<<<<< HEAD
+
 
                 <div class="col-md-4">
                     <img class="rounded-circle img-fluid" src="img/adoption/blanket-dog.jpg" alt="">
@@ -183,7 +180,7 @@
                         Many animals then are found abandoned, helplessly wondering the streets and end up struggling
                         for survival or simply don?t make it through.
                     </p><br>
-=======
+
                 <div class="row text-center">
                     <div class="col-md-8">
 
@@ -217,7 +214,7 @@
                             Adoption saves an animal.If you are eligible in offering a “home” to one of our wonderful
                             animals in our Shelter, you will be rewarded with unconditional love and devotion.
                         </p><br>
->>>>>>> 8137739fcce63485e2546e2f1d7da58ad856b267
+
 
                 </div>
             </div>
@@ -232,7 +229,7 @@
                     <h2 class="section-heading ">Find your dog</h2>
                     <hr>
                 </div>
-<<<<<<< HEAD
+
             </div>
             <div class="container">
                     <div class="row">
@@ -276,7 +273,7 @@
                                             </div>
                                         </div>
                                     </div>
-=======
+
                 <div class="container">
                     <div class="row py-2">
                         <div class="col-md-3 vertical-box">
@@ -312,7 +309,7 @@
                                     <h4 class="card-title text-center">Shagar</h4>
                                     <button type="button" class="btn btn-primary btn-block">Meet him
                                     </button>
->>>>>>> 8137739fcce63485e2546e2f1d7da58ad856b267
+
                                 </div>
                             </div>
                         </div>
@@ -329,7 +326,7 @@
                         </div>
 
                     </div>
-<<<<<<< HEAD
+
                 </div>
                 <div class="container">
                         <div class="row py-2">
@@ -413,7 +410,7 @@
                                         <button type="button" class="btn btn-primary btn-block">Meet her
                                         </button>
                                     </div>
-=======
+
                     <div class="row py-2">
                         <div class="col-md-3 vertical-box">
                             <div class="card">
@@ -559,13 +556,13 @@
                                 <div class="card-body">
                                     <h4 class="card-title text-center">Ilias</h4>
                                     <button type="button" class="btn btn-primary btn-block">Meet him</button>
->>>>>>> 8137739fcce63485e2546e2f1d7da58ad856b267
+
                                 </div>
                             </div>
                             <div class="col-md-3 vertical-box">
                                 <div class="card">
                                     <img class="card-img-top text-center"
-                                        src="/PawSociety/img/adoption/Billy.jpg"
+                                        src="resources/images/adoption/Billy.jpg"
                                         alt="Card image">
                                     <div class="card-body">
                                         <h4 class="card-title text-center">Billy</h4>
@@ -577,7 +574,7 @@
                             <div class="col-md-3 vertical-box">
                                 <div class="card">
                                     <img class="card-img-top text-center"
-                                        src="/PawSociety/img/adoption/Kali.jpg"
+                                        src="resources/images/adoption/Kali.jpg"
                                         alt="Card image">
                                     <div class="card-body">
                                         <h4 class="card-title text-center">Kali</h4>
@@ -587,12 +584,12 @@
                             </div>
             
                         </div>
-<<<<<<< HEAD
+
                         <div class="row py-2">
                             <div class="col-md-3 vertical-box">
                                 <div class="card">
                                     <img class="card-img-top mh200-text"
-                                        src="/PawSociety/img/adoption/artemis.jpg"
+                                        src="resources/images/adoption/artemis.jpg"
                                         alt="Dog image">
                                     <div class="card-body">
                                         <h4 class="card-title text-center">Artemis</h4>
@@ -604,7 +601,7 @@
                             <div class="col-md-3 vertical-box">
                                 <div class="card">
                                     <img class="card-img-top text-center"
-                                        src="/PawSociety/img/adoption/Athina.jpg"
+                                        src="resources/images/adoption/Athina.jpg"
                                         alt="Card image">
                                     <div class="card-body">
                                         <h4 class="card-title text-center">Athina</h4>
@@ -616,7 +613,7 @@
                             <div class="col-md-3 vertical-box">
                                 <div class="card">
                                     <img class="card-img-top text-center"
-                                        src="/PawSociety/img/adoption/barbie.png"
+                                        src="resources/images/adoption/barbie.png"
                                         alt="Card image">
                                     <div class="card-body">
                                         <h4 class="card-title text-center">Barbie</h4>
@@ -628,13 +625,13 @@
                             <div class="col-md-3 vertical-box">
                                 <div class="card">
                                     <img class="card-img-top text-center"
-                                        src="/PawSociety/img/adoption/Box.jpg"
+                                        src="resources/images/adoption/Box.jpg"
                                         alt="Card image">
                                     <div class="card-body">
                                         <h4 class="card-title text-center">Box</h4>
                                         <button type="button" class="btn btn-primary btn-block">Meet him</button>
                                     </div>
-=======
+
 
                     </div>
                     <div class="row py-2">
@@ -671,17 +668,17 @@
                                     <h4 class="card-title text-center">Maous</h4>
                                     <button type="button" class="btn btn-primary btn-block">Meet him
                                     </button>
->>>>>>> 8137739fcce63485e2546e2f1d7da58ad856b267
+
                                 </div>
                             </div>
             
                         </div>
-<<<<<<< HEAD
+
                         <div class="row py-2">
                             <div class="col-md-3 vertical-box">
                                 <div class="card">
                                     <img class="card-img-top mh200-text"
-                                        src="/PawSociety/img/adoption/Dora.jpg"
+                                        src="resources/images/adoption/Dora.jpg"
                                         alt="Dog image">
                                     <div class="card-body">
                                         <h4 class="card-title text-center">Dora</h4>
@@ -693,7 +690,7 @@
                             <div class="col-md-3 vertical-box">
                                 <div class="card">
                                     <img class="card-img-top text-center"
-                                        src="/PawSociety/img/adoption/hercules.jpg"
+                                        src="resources/images/adoption/hercules.jpg"
                                         alt="Card image">
                                     <div class="card-body">
                                         <h4 class="card-title text-center">Hercules</h4>
@@ -748,13 +745,13 @@
                                     <h4 class="card-title text-center">Popeye</h4>
                                     <button type="button" class="btn btn-primary btn-block">Meet him
                                     </button>
->>>>>>> 8137739fcce63485e2546e2f1d7da58ad856b267
+
                                 </div>
                             </div>
                             <div class="col-md-3 vertical-box">
                                 <div class="card">
                                     <img class="card-img-top text-center"
-                                        src="/PawSociety/img/adoption/Ice.jpg"
+                                        src="resources/images/adoption/Ice.jpg"
                                         alt="Card image">
                                     <div class="card-body">
                                         <h4 class="card-title text-center">Ice</h4>
@@ -766,7 +763,7 @@
                             <div class="col-md-3 vertical-box">
                                 <div class="card">
                                     <img class="card-img-top text-center"
-                                        src="/PawSociety/img/adoption/ilias.jpg"
+                                        src="resources/images/adoption/ilias.jpg"
                                         alt="Card image">
                                     <div class="card-body">
                                         <h4 class="card-title text-center">Ilias</h4>
@@ -776,19 +773,19 @@
                             </div>
             
                         </div>
-<<<<<<< HEAD
+
                         <div class="row py-2">
                             <div class="col-md-3 vertical-box">
                                 <div class="card">
                                     <img class="card-img-top mh200-text"
-                                        src="/PawSociety/img/adoption/Loco2.jpg"
+                                        src="resources/images/adoption/Loco2.jpg"
                                         alt="Dog image">
                                     <div class="card-body">
                                         <h4 class="card-title text-center">Loco</h4>
                                         <button type="button" class="btn btn-primary btn-block">Meet him
                                         </button>
                                     </div>
-=======
+
                         <div class="col-md-3 vertical-box">
                             <div class="card">
                                 <img class="card-img-top text-center"
@@ -847,13 +844,13 @@
                                 <div class="card-body">
                                     <h4 class="card-title text-center">Zagor</h4>
                                     <button type="button" class="btn btn-primary btn-block">Meet him</button>
->>>>>>> 8137739fcce63485e2546e2f1d7da58ad856b267
+
                                 </div>
                             </div>
                             <div class="col-md-3 vertical-box">
                                 <div class="card">
                                     <img class="card-img-top text-center"
-                                        src="/PawSociety/img/adoption/magic.JPG"
+                                        src="resources/images/adoption/magic.JPG"
                                         alt="Card image">
                                     <div class="card-body">
                                         <h4 class="card-title text-center">Magic</h4>
@@ -865,7 +862,7 @@
                             <div class="col-md-3 vertical-box">
                                 <div class="card">
                                     <img class="card-img-top text-center"
-                                        src="/PawSociety/img/adoption/maous (2).jpg"
+                                        src="resources/images/adoption/maous (2).jpg"
                                         alt="Card image">
                                     <div class="card-body">
                                         <h4 class="card-title text-center">Maous</h4>
@@ -877,7 +874,7 @@
                             <div class="col-md-3 vertical-box">
                                 <div class="card">
                                     <img class="card-img-top text-center"
-                                        src="/PawSociety/img/adoption/marion.jpg"
+                                        src="resources/images/adoption/marion.jpg"
                                         alt="Card image">
                                     <div class="card-body">
                                         <h4 class="card-title text-center">Marion</h4>
@@ -891,7 +888,7 @@
                             <div class="col-md-3 vertical-box">
                                 <div class="card">
                                     <img class="card-img-top mh200-text"
-                                        src="/PawSociety/img/adoption/misti.jpg"
+                                        src="resources/images/adoption/misti.jpg"
                                         alt="Dog image">
                                     <div class="card-body">
                                         <h4 class="card-title text-center">Misti</h4>
@@ -903,7 +900,7 @@
                             <div class="col-md-3 vertical-box">
                                 <div class="card">
                                     <img class="card-img-top text-center"
-                                        src="/PawSociety/img/adoption/OSMAN.jpg..jpg"
+                                        src="resources/images/adoption/OSMAN.jpg..jpg"
                                         alt="Card image">
                                     <div class="card-body">
                                         <h4 class="card-title text-center">Osman</h4>

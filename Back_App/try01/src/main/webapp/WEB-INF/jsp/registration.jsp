@@ -26,7 +26,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
 
         <!-- Custom styles for this template -->
-        <link href="resources/css/style_reg.css" rel="stylesheet">
+        <link href="css/style_reg.css" rel="stylesheet">
 
     </head>
     <body id="page-top">
@@ -54,7 +54,7 @@
                             <a class="nav-link js-scroll-trigger bar-li" href="#">Donate</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger bar-li" href="#">Register</a>
+                            <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/register">Register</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger bar-li" href="#">Log in</a>
@@ -80,31 +80,28 @@
                             <div class="row">
                                 <div class="col-md-12 maindiv">
                                     <div class="form-group">
-                                        <!--                                        <input class="form-control" id="firstname" type="text" placeholder="First Name *" required="required"
-                                                                                       data-validation-required-message="Please enter your name.">-->
-                                        <spring:label path="firstname">Please Enter your name</spring:label>
-                                        <spring:input path="firstname"></spring:input>
+                                                                                
+                                        <spring:label path="firstname"></spring:label>
+                                        <spring:input path="firstname" class="form-control" type="text" placeholder="First Name " required="required"
+                                                       data-validation-required-message="Please enter your name."></spring:input>
                                             <p class="help-block text-danger"></p>
                                         </div>
                                         <div class="form-group">
-                                            <!--                                        <input class="form-control" id="lastname" type="text" placeholder="Last Name *" required="required"
-                                                                                           data-validation-required-message="Please enter your name.">-->
                                         <spring:label path="lastname">Please Enter your Last Name</spring:label>
-                                        <spring:input path="lastname"></spring:input>
+                                        <spring:input path="lastname" class="form-control" type="text" placeholder="Last Name" required="required"
+                                                       data-validation-required-message="Please enter your name."></spring:input>
                                             <p class="help-block text-danger"></p>
                                         </div>
                                         <div class="form-group">
-                                            <!--                                        <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required"
-                                                                                           data-validation-required-message="Please enter your email address.">-->
                                         <spring:label path="email">Please Enter your Email</spring:label>
-                                        <spring:input path="email"></spring:input>
+                                        <spring:input path="email" class="form-control" type="email" placeholder="Your Email *" required="required"
+                                                       data-validation-required-message="Please enter your email address."></spring:input>
                                             <p class="help-block text-danger"></p>
                                         </div>
                                         <div class="form-group">
-                                            <!--                                        <input class="form-control" id="password" type="password" placeholder="Password *" required="required"
-                                                                                           data-validation-required-message="Please enter your name.">-->
                                         <spring:label path="password">Please Enter Password</spring:label>
-                                        <spring:password path="password"></spring:password>
+                                        <spring:password path="password" class="form-control" type="password" placeholder="Password" required="required"
+                                                          data-validation-required-message="Please enter your name."></spring:password>
                                             <p class="help-block text-danger"></p>
                                         </div>
 
@@ -112,7 +109,7 @@
                                         <div class="col-lg-12 text-center">
                                             <div id="success"></div>
 
-                                            <input id="Submit" class="btn btn-primary btn-xl text-uppercase" type="submit">
+                                            <input value="Submit" class="btn btn-primary btn-xl text-uppercase" type="submit">
                                         </div>
                                     </div>
                             </spring:form>
