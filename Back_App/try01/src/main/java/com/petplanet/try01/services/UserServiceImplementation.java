@@ -6,8 +6,10 @@
 package com.petplanet.try01.services;
 
 import com.petplanet.try01.model.User;
+import com.petplanet.try01.repository.UserRepository;
 import java.util.List;
 import javax.transaction.Transactional;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,58 +17,31 @@ import org.springframework.stereotype.Service;
  * @author Kostis.Mikroulis
  * 
  */
-@Service("userService")
+@Service
 @Transactional
 public class UserServiceImplementation implements UserService {
-
+    
+    @Autowired
+    UserRepository uRepository;
+    
     @Override
-    public User findById(Long id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void insertUser(User user) {
+        uRepository.save(user);
     }
 
     @Override
-    public User findByFirstName(String firstName) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Iterable<User> getUsers() {
+        return uRepository.findAll();
     }
 
     @Override
-    public User findByLastName(String lastName) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public List<User> findUserByFirstName(String firstname) {
+        return uRepository.findByFirstName(firstname);
     }
 
     @Override
-    public User findByEmail(String email) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void saveUser(User user) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void updateUser(User user) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void deleteUserById(Long id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void deleteAllUsers() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public List<User> findAllUsers() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public boolean isUserExist(User user) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public User findUserByEmail(String email) {
+        return uRepository.findByEmail(email);
     }
     
 }

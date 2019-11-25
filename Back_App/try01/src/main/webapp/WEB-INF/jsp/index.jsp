@@ -5,7 +5,6 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@taglib uri="http://www.springframework.org/tags/form" prefix="spring"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -25,11 +24,13 @@
     </head>
     <body id="page-top">
 
-        <!-- Navigation -->
+        <!-- NAVIGATON BAR -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
+                <!-- LOGO -->
                 <img id="logo_animated" src="resources/images/logos/logo_animated.gif" alt="animated-logo">
-                <a class="navbar-brand js-scroll-trigger logo" href="#page-top">Paw Society</a>
+                <!-- Dummy Controller returning HOME !DONE!-->
+                <a class="navbar-brand js-scroll-trigger logo" href="${pageContext.request.contextPath}/">Paw Society</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -39,31 +40,49 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
                         <li class="nav-item">
-                            <!--  TO_DO CONTROLLER -->
+<<<<<<< HEAD
+                            <!--  TO-DO CONTROLLER -->
                             <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/about">About us</a>
                         </li>
                         <li class="nav-item">
-                            <!--  TO_DO CONTROLLER -->
+                            <!--  !DONE! ADOPT CONTROLLER -->
                             <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/adopt">Adopt</a>
+=======
+                            <!--  TO_DO CONTROLLER -->
+                            <a class="nav-link js-scroll-trigger bar-li" href="#about">About us</a>
                         </li>
                         <li class="nav-item">
-                            <!--  TO_DO CONTROLLER ( OPENS PAYPAL SANDBOX ) - Use for validation of login too  -->
+                            <!--  TO_DO CONTROLLER -->
+                            <a class="nav-link js-scroll-trigger bar-li" href="adopt.html">Adopt</a>
+>>>>>>> 712b0ab0d9c886c6c43feeb4bed7ddfbf89e120f
+                        </li>
+                        <li class="nav-item">
+                            <!--  TO-DO CONTROLLER ( OPENS PAYPAL SANDBOX ) - Use for validation of login too  -->
                             <a class="nav-link js-scroll-trigger bar-li" href="#">Donate</a>
                         </li>
                         <li class="nav-item">
-                            <!--  RegLogin CONTROLLER -->
+<<<<<<< HEAD
+                            <!--  INSERT CONTROLLER -->
                             <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/register">Register</a>
                         </li>
                         <li class="nav-item">
-                            <!--  TO_DO CONTROLLER -->
+                            <!--   ( LOGIN ) HERE SPRING SECURITY -->
                             <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/login">Log in</a>
+=======
+                            <!--  TO_DO CONTROLLER -->
+                            <a class="nav-link js-scroll-trigger bar-li" href="registration.html">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <!--  TO_DO CONTROLLER -->
+                            <a class="nav-link js-scroll-trigger bar-li" href="#">Log in</a>
+>>>>>>> 712b0ab0d9c886c6c43feeb4bed7ddfbf89e120f
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <!-- Header -->
+        <!-- HEADER --SECTION -->
         <header class="masthead">
             <div class="container">
                 <div class="intro-text pt3">
@@ -74,7 +93,7 @@
             </div>
         </header>
 
-        <!-- About us-->
+        <!-- ABOUT US --SECTION -->
         <section class="page-section" id="about">
             <div class="container">
                 <div class="row">
@@ -161,7 +180,7 @@
             </div>
         </section>
 
-        <!-- Services -->
+        <!-- SERVICES --SECTION -->
         <section class="page-section" id="services">
             <div class="container">
                 <div class="row">
@@ -211,7 +230,7 @@
 
 
 
-        <!-- Team -->
+        <!-- TEAM --SECTION -->
         <section class="bg-light page-section" id="team">
             <div class="container">
                 <div class="row">
@@ -252,7 +271,7 @@
             </div>
         </section>
 
-        <!-- Contact -->
+        <!-- CONTACT --SECTION -->
         <section>
         <div class="container-fluid">
             <div class="row">
@@ -306,7 +325,7 @@
         </div>
     </section><!-- #contact -->
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="row align-items-center">
@@ -364,7 +383,7 @@
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
     
-    <!-- KOSTIS  ALTERNATIVE CDNs ( if above dont work ) 
+    <!-- KOSTIS  ALTERNATIVE CDNs ( if above don't work ) 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

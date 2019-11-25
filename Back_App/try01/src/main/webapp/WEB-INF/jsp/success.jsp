@@ -29,6 +29,6 @@
             </tr>
             
         </table>
-        <a href="index.jsp">Return Home.</a>
+        
     </body>
 </html>

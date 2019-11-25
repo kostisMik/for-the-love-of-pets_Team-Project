@@ -35,7 +35,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
                 <img id="logo_animated" src="resources/images/logos/logo_animated.gif" alt="logo-animated">
-                <a class="navbar-brand js-scroll-trigger logo" href="${pageContext.request.contextPath}/index.jsp">Paw Society</a>
+                <a class="navbar-brand js-scroll-trigger logo" href="${pageContext.request.contextPath}/">Paw Society</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -54,7 +54,7 @@
                             <a class="nav-link js-scroll-trigger bar-li" href="#">Donate</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger bar-li" href="registration.html">Register</a>
+                            <a class="nav-link js-scroll-trigger bar-li" href="#">Register</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger bar-li" href="#">Log in</a>
@@ -76,47 +76,49 @@
                 <div class="row">
                     <div class="col-lg-12">
 
-                        <spring:form modelAttribute="user" id="contactForm" name="Registration" action="${pageContext.request.contextPath}/registered" method="POST" >
+                        <spring:form modelAttribute="user" id="contactForm" name="Registration" action="${pageContext.request.contextPath}/inserted" method="POST" >
                             <div class="row">
                                 <div class="col-md-12 maindiv">
                                     <div class="form-group">
-                                        <input class="form-control" id="firstname" type="text" placeholder="First Name *" required="required"
-                                               data-validation-required-message="Please enter your name.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="form-group">
-                                        <input class="form-control" id="lastname" type="text" placeholder="Last Name *" required="required"
-                                               data-validation-required-message="Please enter your name.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="form-group">
-                                        <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required"
-                                               data-validation-required-message="Please enter your email address.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="form-group">
-                                        <input class="form-control" id="password" type="password" placeholder="Password *" required="required"
-                                               data-validation-required-message="Please enter your name.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="form-group">
-                                        <input class="form-control" id="repassword" type="password" placeholder="Repeat your password *"
-                                               required="required" data-validation-required-message="Please enter your name.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
+                                        <!--                                        <input class="form-control" id="firstname" type="text" placeholder="First Name *" required="required"
+                                                                                       data-validation-required-message="Please enter your name.">-->
+                                        <spring:label path="firstname">Please Enter your name</spring:label>
+                                        <spring:input path="firstname"></spring:input>
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <!--                                        <input class="form-control" id="lastname" type="text" placeholder="Last Name *" required="required"
+                                                                                           data-validation-required-message="Please enter your name.">-->
+                                        <spring:label path="lastname">Please Enter your Last Name</spring:label>
+                                        <spring:input path="lastname"></spring:input>
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <!--                                        <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required"
+                                                                                           data-validation-required-message="Please enter your email address.">-->
+                                        <spring:label path="email">Please Enter your Email</spring:label>
+                                        <spring:input path="email"></spring:input>
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <!--                                        <input class="form-control" id="password" type="password" placeholder="Password *" required="required"
+                                                                                           data-validation-required-message="Please enter your name.">-->
+                                        <spring:label path="password">Please Enter Password</spring:label>
+                                        <spring:password path="password"></spring:password>
+                                            <p class="help-block text-danger"></p>
+                                        </div>
 
-                                </div>
+                                        <div class="clearfix"></div>
+                                        <div class="col-lg-12 text-center">
+                                            <div id="success"></div>
 
-                                <div class="clearfix"></div>
-                                <div class="col-lg-12 text-center">
-                                    <div id="success"></div>
-                                    <button id="Submit" class="btn btn-primary btn-xl text-uppercase" type="submit">Submit</button>
-                                </div>
-                            </div>
-                        </spring:form>
+                                            <input id="Submit" class="btn btn-primary btn-xl text-uppercase" type="submit">
+                                        </div>
+                                    </div>
+                            </spring:form>
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
 
         <!-- Footer -->

@@ -39,7 +39,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
                 <img id="logo_animated" src="resources/images/logos/logo_animated.gif" alt="animated-logo">
-                <a class="navbar-brand js-scroll-trigger logo" href="index.html">Paw Society</a>
+                <a class="navbar-brand js-scroll-trigger logo" href="${pageContext.request.contextPath}/">Paw Society</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -74,7 +74,7 @@
             <div class="container">
                 <div class="intro-text">
                     <div class="intro-lead-in">Every dog needs a home!
-
+                         <!-- Pou paei auto? -->
                         <a class="btn btn-primary btn-xl js-scroll-trigger" href="#find-dog">Find your dog</a>
                     </div>
                 </div>
