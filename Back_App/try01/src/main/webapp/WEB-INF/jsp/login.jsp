@@ -71,7 +71,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <form action="${pageContext.request.contextPath}/logged" method="post">
+                        <form action="${pageContext.request.contextPath}/adminLogged" modelAttribute="user" method="post">
                             Email:<input type="text"  class="form-control" placeholder="Email" required="required" name="email">
                             Password:<input type="password" class="form-control" placeholder="Password" required="required" name="password">
                             <input type="submit" value="submit">
