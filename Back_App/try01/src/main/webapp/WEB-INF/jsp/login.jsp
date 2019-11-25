@@ -67,39 +67,32 @@
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <h2 class="section-heading text-uppercase">Log in</h2>
+
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <spring:form modelAttribute="user" id="contactForm" name="Registration" action="${pageContext.request.contextPath}/inserted" method="POST" >
+                        <form action="${pageContext.request.contextPath}/adminLogged" method="post">
                             <div class="row">
-                                <div class="col-md-12 maindiv">  
-                                        <div class="form-group">
-                                        <spring:label path="email"></spring:label>
-                                        <spring:input path="email" class="form-control" placeholder="Email" required="required"
-                                                      data-validation-required-message="Please enter your email address."></spring:input>
-                                            <p class="help-block text-danger"></p>
-                                        </div>
-                                        <div class="form-group">
-
-                                        <spring:label path="password"></spring:label>
-                                        <spring:password path="password" class="form-control" placeholder="Password " required="required"
-                                                         data-validation-required-message="Please enter your password."></spring:password>
-                                            <p class="help-block text-danger"></p>
-                                        </div>
-
-                                        <div class="clearfix"></div>
-                                        <div class="col-lg-12 text-center">
-                                            <div id="success"></div>
-
-                                            <input id="Submit" class="btn btn-primary btn-xl text-uppercase" type="submit" value="Submit">
-                                        </div>
+                                <div class="col-md-12 maindiv">
+                                    <div class="form-group">
+                                        Email:<input type="text" class="form-control" placeholder="Your Email" name="email" >
                                     </div>
-                            </spring:form>
+                                    <div class="form-group">
+                                        Password:<input type="password" class="form-control" placeholder="Password " name="password">
+                                    </div>
 
-                        </div>
+                                    <div class="clearfix"></div>
+                                    <div class="col-lg-12 text-center">
+                                        <div id="success"></div>
+                                        <input type="submit" class="btn btn-primary btn-xl text-uppercase" value="submit">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
+            </div>
         </section>
 
         <!-- Footer -->

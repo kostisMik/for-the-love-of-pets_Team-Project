@@ -110,8 +110,9 @@
                                             <input id="Submit" class="btn btn-primary btn-xl text-uppercase" type="submit" value="Submit">
                                         </div>
                                     </div>
+                            </div>
                             </spring:form>
-                        </div>
+                        
                     </div>
                 </div>
         </section>

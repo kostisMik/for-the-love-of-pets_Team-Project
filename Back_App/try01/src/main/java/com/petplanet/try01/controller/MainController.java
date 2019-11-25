@@ -76,15 +76,15 @@ public class MainController {
     }
 
     @PostMapping( "/adminLogged" )
-    public String doLogin( @RequestParam( value = "email") String email, @RequestParam( value = "password" ) String password,
+    public String doLogin( @RequestParam( value = "email" ) String email, @RequestParam( value = "password" ) String password,
             HttpSession session) {
         User user = uService.findUserByEmail(email);
-        boolean isValid = BCrypt.checkpw(password, user.getPassword());
-        if( isValid ){
-            session.removeAttribute("login");
-            user.setPassword(null);
-            session.setAttribute("login", user);
-        }
+//        boolean isValid = BCrypt.checkpw(password, user.getPassword());
+//        if( isValid ){
+//            session.removeAttribute("login");
+//            user.setPassword(null);
+//            session.setAttribute("login", user);
+//        }
         return "adminView";
     }
 
