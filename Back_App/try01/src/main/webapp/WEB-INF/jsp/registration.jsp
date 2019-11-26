@@ -11,8 +11,6 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
         <title>Registration</title>
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -45,19 +43,19 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger bar-li" href="index.html#about">About us</a>
+                            <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/#about">About us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger bar-li" href="adopt.html">Adopt</a>
+                            <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/adopt">Adopt</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger bar-li" href="#">Donate</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger bar-li" href="#">Register</a>
+                            <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/register">Register</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger bar-li" href="#">Log in</a>
+                            <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/login">Log in</a>
                         </li>
                     </ul>
                 </div>
@@ -70,7 +68,7 @@
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <h2 class="section-heading text-uppercase">Register</h2>
-                        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                        <h3 class="section-subheading text-muted">Please insert your personal information</h3>
                     </div>
                 </div>
                 <div class="row">
@@ -79,32 +77,29 @@
                         <spring:form modelAttribute="user" id="contactForm" name="Registration" action="${pageContext.request.contextPath}/inserted" method="POST" >
                             <div class="row">
                                 <div class="col-md-12 maindiv">
-                                    <div class="form-group">
-                                        <!--                                        <input class="form-control" id="firstname" type="text" placeholder="First Name *" required="required"
-                                                                                       data-validation-required-message="Please enter your name.">-->
-                                        <spring:label path="firstname">Please Enter your name</spring:label>
-                                        <spring:input path="firstname"></spring:input>
+                                    <div class="form-group"> 
+                                        <spring:label path="firstname"></spring:label>
+                                        <spring:input path="firstname" class="form-control" placeholder="First Name" required="required"
+                    data-validation-required-message="Please enter your name."></spring:input>
                                             <p class="help-block text-danger"></p>
                                         </div>
                                         <div class="form-group">
-                                            <!--                                        <input class="form-control" id="lastname" type="text" placeholder="Last Name *" required="required"
-                                                                                           data-validation-required-message="Please enter your name.">-->
-                                        <spring:label path="lastname">Please Enter your Last Name</spring:label>
-                                        <spring:input path="lastname"></spring:input>
+                                        <spring:label path="lastname"></spring:label>
+                                        <spring:input path="lastname" class="form-control" placeholder="Last Name" required="required"
+                    data-validation-required-message="Please enter your last name."></spring:input>
                                             <p class="help-block text-danger"></p>
                                         </div>
                                         <div class="form-group">
-                                            <!--                                        <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required"
-                                                                                           data-validation-required-message="Please enter your email address.">-->
-                                        <spring:label path="email">Please Enter your Email</spring:label>
-                                        <spring:input path="email"></spring:input>
+                                        <spring:label path="email"></spring:label>
+                                        <spring:input path="email" class="form-control" placeholder="Your Email" required="required"
+                    data-validation-required-message="Please enter your email address."></spring:input>
                                             <p class="help-block text-danger"></p>
                                         </div>
                                         <div class="form-group">
-                                            <!--                                        <input class="form-control" id="password" type="password" placeholder="Password *" required="required"
-                                                                                           data-validation-required-message="Please enter your name.">-->
-                                        <spring:label path="password">Please Enter Password</spring:label>
-                                        <spring:password path="password"></spring:password>
+                                            
+                                        <spring:label path="password"></spring:label>
+                                        <spring:password path="password" class="form-control" placeholder="Password " required="required"
+                    data-validation-required-message="Please enter your password."></spring:password>
                                             <p class="help-block text-danger"></p>
                                         </div>
 
@@ -112,11 +107,12 @@
                                         <div class="col-lg-12 text-center">
                                             <div id="success"></div>
 
-                                            <input id="Submit" class="btn btn-primary btn-xl text-uppercase" type="submit">
+                                            <input id="Submit" class="btn btn-primary btn-xl text-uppercase" type="submit" value="Submit">
                                         </div>
                                     </div>
+                            </div>
                             </spring:form>
-                        </div>
+                        
                     </div>
                 </div>
         </section>

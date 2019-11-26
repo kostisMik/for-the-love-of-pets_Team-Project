@@ -103,7 +103,7 @@ img::-moz-selection {
 }
 
 .btn-primary {
-  background-color: #BF5C8E;
+  background-color: rgb(191, 92, 142);
   border-color: #BF5C8E;
 }
 

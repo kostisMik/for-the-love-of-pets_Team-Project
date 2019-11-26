@@ -15,7 +15,6 @@ import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -34,56 +33,44 @@ import javax.xml.bind.annotation.XmlRootElement;
     , @NamedQuery(name = "User.findByUsername", query = "SELECT u FROM User u WHERE u.username = :username")
     , @NamedQuery(name = "User.findByPassword", query = "SELECT u FROM User u WHERE u.password = :password")
     , @NamedQuery(name = "User.findByEmail", query = "SELECT u FROM User u WHERE u.email = :email")
-    , @NamedQuery(name = "User.findByTelephone", query = "SELECT u FROM User u WHERE u.telephone = :telephone")})
+    , @NamedQuery(name = "User.findBySsoId", query = "SELECT u FROM User u WHERE u.ssoId = :ssoId")
+    , @NamedQuery(name = "User.findByState", query = "SELECT u FROM User u WHERE u.state = :state")})
 public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
-    @Column(name = "user_id", columnDefinition = "serial")
+    @Column(name = "user_id")
     private Integer userId;
-    @Basic(optional = false)
-    
+    @Size(max = 45)
     @Column(name = "firstname")
     private String firstname;
-    @Basic(optional = false)
-    
+    @Size(max = 45)
     @Column(name = "lastname")
     private String lastname;
-    @Basic(optional = false)
-   
+    @Size(max = 45)
     @Column(name = "username")
-    // (DELETE)
     private String username;
-    @Basic(optional = false)
-    
+    @Size(max = 1000)
     @Column(name = "password")
     private String password;
     // @Pattern(regexp="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?", message="Invalid email")//if the field contains email address consider using this annotation to enforce field validation
-    
+    @Size(max = 60)
     @Column(name = "email")
     private String email;
-    @Basic(optional = false)
-    @NotNull
-    @Column(name = "telephone")
-    // (DELETE)
-    private int telephone;
+    @Size(max = 45)
+    @Column(name = "sso_id")
+    private String ssoId;
+    @Size(max = 45)
+    @Column(name = "state")
+    private String state;
 
     public User() {
     }
 
     public User(Integer userId) {
         this.userId = userId;
-    }
-
-    public User(Integer userId, String firstname, String lastname, String username, String password, int telephone) {
-        this.userId = userId;
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.username = username;
-        this.password = password;
-        this.telephone = telephone;
     }
 
     public Integer getUserId() {
@@ -134,12 +121,20 @@ public class User implements Serializable {
         this.email = email;
     }
 
-    public int getTelephone() {
-        return telephone;
+    public String getSsoId() {
+        return ssoId;
     }
 
-    public void setTelephone(int telephone) {
-        this.telephone = telephone;
+    public void setSsoId(String ssoId) {
+        this.ssoId = ssoId;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
     }
 
     @Override
@@ -156,7 +151,10 @@ public class User implements Serializable {
             return false;
         }
         User other = (User) object;
-        return !((this.userId == null && other.userId != null) || (this.userId != null && !this.userId.equals(other.userId)));
+        if ((this.userId == null && other.userId != null) || (this.userId != null && !this.userId.equals(other.userId))) {
+            return false;
+        }
+        return true;
     }
 
     @Override
