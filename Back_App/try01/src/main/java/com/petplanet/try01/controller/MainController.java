@@ -5,7 +5,9 @@
  */
 package com.petplanet.try01.controller;
 
+import com.petplanet.try01.model.Dog;
 import com.petplanet.try01.model.User;
+import com.petplanet.try01.services.DogService;
 import com.petplanet.try01.services.UserService;
 import javax.servlet.http.HttpSession;
 import org.mindrot.jbcrypt.BCrypt;
@@ -32,6 +34,9 @@ public class MainController {
     @Autowired
     UserService uService;
 
+    @Autowired 
+    DogService dogService;
+    
     // GENERAL CONTROLLERS ( Navigating main page's links )
     // Go home by pressing logo ( WORKING )
     @GetMapping("/")
@@ -75,8 +80,8 @@ public class MainController {
         return "login";
     }
 
-    @PostMapping( "/adminLogged" )
-    public String doLogin( @RequestParam( value = "email" ) String email, @RequestParam( value = "password" ) String password,
+    @PostMapping("/adminLogged")
+    public String doLogin(@RequestParam(value = "email") String email, @RequestParam(value = "password") String password,
             HttpSession session) {
         User user = uService.findUserByEmail(email);
 //        boolean isValid = BCrypt.checkpw(password, user.getPassword());
@@ -88,9 +93,27 @@ public class MainController {
         return "adminView";
     }
 
-    @GetMapping( "/logout" )
-    public String doLogout( HttpSession session ){
+    @GetMapping("/logout")
+    public String doLogout(HttpSession session) {
         session.invalidate();
         return "login";
+    }
+
+    // INSERT DOG LINK | ( ADMIN'S VIEW ) 
+    @GetMapping("/insertDog")
+    public String insertDog( ModelMap modelo ) {
+        Dog dog = new Dog();
+        modelo.addAttribute(dog);
+        
+        return "registerDog";
+    }
+
+    // INSERT DOG | POST Controller
+    @PostMapping(value = "/dogInserted")
+    public String doDogInsert( @ModelAttribute("dog") Dog dog ) {
+        
+        dogService.insertDog(dog);
+
+        return "adminView";
     }
 }

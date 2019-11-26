@@ -80,7 +80,7 @@
                             <td>AB1234</td>
                             <td>Toy</td>
                             <td>08/17/2011</td>
-                            <td><button type="button" class="btn btn-info">Insert</button>
+                            <td>
                                 <button type="button" class="btn btn-success">Edit</button>
                                 <button type="button" class="btn btn-danger">Delete</button></td>
                         </tr>
@@ -91,7 +91,7 @@
                             <td>AB1235</td>
                             <td>Medium</td>
                             <td>08/29/2019</td>
-                            <td><button type="button" class="btn btn-info">Insert</button>
+                            <td>
                                 <button type="button" class="btn btn-success">Edit</button>
                                 <button type="button" class="btn btn-danger">Delete</button></td>
                         </tr>
@@ -102,7 +102,7 @@
                             <td>AB1236</td>
                             <td>Toy</td>
                             <td>07/20/2016</td>
-                            <td><button type="button" class="btn btn-info">Insert</button>
+                            <td>
                                 <button type="button" class="btn btn-success">Edit</button>
                                 <button type="button" class="btn btn-danger">Delete</button></td>
                         </tr>
@@ -110,7 +110,9 @@
                 </table>
             </div>
         </section>
+        <!-- Insert Action -->
         <section>
+            <button type="button" class="btn btn-info"><a href="/insertDog">Insert New Dog</a></button>
         </section>
         <!-- FOOTER -->
         <footer class="footer">

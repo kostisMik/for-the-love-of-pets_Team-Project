@@ -74,7 +74,7 @@
                 <div class="row">
                     <div class="col-lg-12">
 
-                        <spring:form modelAttribute="user" id="contactForm" name="Registration" action="${pageContext.request.contextPath}/inserted" method="POST" >
+                        <spring:form modelAttribute="dog" id="contactForm" name="Registration" action="${pageContext.request.contextPath}/dogInserted" method="POST" >
                             <div class="row">
                                 <div class="col-md-12 maindiv">
                                     <div class="form-group"> 
