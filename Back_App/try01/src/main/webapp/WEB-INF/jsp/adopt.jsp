@@ -453,7 +453,7 @@
                         <div class="col-md-3 vertical-box">
                             <div class="card">
                                 <img class="card-img-top text-center"
-                                     src="resources/images/adoption/OSMAN.jpg..jpg"
+                                     src="resources/images/adoption/OSMAN.jpg"
                                      alt="Card image">
                                 <div class="card-body">
                                     <h4 class="card-title text-center">Osman</h4>
