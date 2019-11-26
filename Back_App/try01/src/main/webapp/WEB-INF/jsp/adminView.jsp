@@ -63,18 +63,18 @@
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th scope="col"></th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Gender</th>
-                            <th scope="col">Chip</th>
-                            <th scope="col">Size</th>
-                            <th scope="col">Birthdate</th>
-                            <th scope="col">Options</th>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Gender</th>
+                            <th>Chip</th>
+                            <th>Size</th>
+                            <th>Birthdate</th>
+                            <th>Options</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">1</th>
+                            <th>1</th>
                             <td>Dias</td>
                             <td>Male</td>
                             <td>AB1234</td>
@@ -85,7 +85,7 @@
                                 <button type="button" class="btn btn-danger">Delete</button></td>
                         </tr>
                         <tr>
-                            <th scope="row">2</th>
+                            <th>2</th>
                             <td>Kira</td>
                             <td>Female</td>
                             <td>AB1235</td>
@@ -96,7 +96,7 @@
                                 <button type="button" class="btn btn-danger">Delete</button></td>
                         </tr>
                         <tr>
-                            <th scope="row">3</th>
+                            <th>3</th>
                             <td>Shagar</td>
                             <td>Male</td>
                             <td>AB1236</td>
@@ -112,19 +112,18 @@
         </section>
         <section>
         </section>
-        <!-- Footer -->
+        <!-- FOOTER -->
         <footer class="footer">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-4">
-                        <span class="copyright">Copyright &copy; Your Website 2019</span>
+                        <span class="copyright">Copyright &copy; Paw-Planet 2019</span>
                     </div>
                     <div class="col-md-4">
                         <ul class="list-inline social-buttons">
                             <li class="list-inline-item">
                                 <a href="#">
                                     <i class="icon ion-logo-facebook"></i>
-
                                 </a>
                             </li>
                             <li class="list-inline-item">
