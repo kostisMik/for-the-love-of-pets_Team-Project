@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 <%-- 
     Document   : adminView
     Created on : Nov 25, 2019, 8:12:08 PM
@@ -34,7 +32,7 @@
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <img id="logo_animated" src="/PawSociety/img/logos/logo_animated.gif" alt="logo-animated">
+                <img id="logo_animated" src="resources/images/logos/logo_animated.gif" alt="logo-animated">
                 <a class="navbar-brand js-scroll-trigger logo" href="index.html">Paw Society</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -86,7 +84,7 @@
                             <td>AB1234</td>
                             <td>Toy</td>
                             <td>08/17/2011</td>
-                            <td>
+                            <td><button type="button" class="btn btn-info">Insert</button>
                                 <button type="button" class="btn btn-success">Edit</button>
                                 <button type="button" class="btn btn-danger">Delete</button></td>
                         </tr>
@@ -97,7 +95,7 @@
                             <td>AB1235</td>
                             <td>Medium</td>
                             <td>08/29/2019</td>
-                            <td>
+                            <td><button type="button" class="btn btn-info">Insert</button>
                                 <button type="button" class="btn btn-success">Edit</button>
                                 <button type="button" class="btn btn-danger">Delete</button></td>
                         </tr>
@@ -108,7 +106,7 @@
                             <td>AB1236</td>
                             <td>Toy</td>
                             <td>07/20/2016</td>
-                            <td>
+                            <td><button type="button" class="btn btn-info">Insert</button>
                                 <button type="button" class="btn btn-success">Edit</button>
                                 <button type="button" class="btn btn-danger">Delete</button></td>
                         </tr>
@@ -116,9 +114,7 @@
                 </table>
             </div>
         </section>
-        <!-- Insert Action -->
         <section>
-            <button type="button" class="btn btn-info"><a href="/insertDog">Insert New Dog</a></button>
         </section>
         <!-- FOOTER -->
         <footer class="footer">
@@ -175,4 +171,4 @@
 
 
 </html>
->>>>>>> 78c004c1526fa23658a7d868a3b008f3652d51b3
+
