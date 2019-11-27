@@ -7,7 +7,6 @@ package com.petplanet.try01.controller;
 
 import com.petplanet.try01.model.Dog;
 import com.petplanet.try01.model.User;
-import com.petplanet.try01.services.DogService;
 import com.petplanet.try01.services.UserService;
 import javax.servlet.http.HttpSession;
 import org.mindrot.jbcrypt.BCrypt;
@@ -34,9 +33,6 @@ public class MainController {
     @Autowired
     UserService uService;
 
-    @Autowired 
-    DogService dogService;
-    
     // GENERAL CONTROLLERS ( Navigating main page's links )
     // Go home by pressing logo ( WORKING )
     @GetMapping("/")
@@ -101,18 +97,16 @@ public class MainController {
 
     // INSERT DOG LINK | ( ADMIN'S VIEW ) 
     @GetMapping("/insertDog")
-    public String insertDog( ModelMap modelo ) {
+    public String insertDog(ModelMap modelo) {
         Dog dog = new Dog();
         modelo.addAttribute(dog);
-        
+
         return "registerDog";
     }
 
     // INSERT DOG | POST Controller
     @PostMapping(value = "/dogInserted")
-    public String doDogInsert( @ModelAttribute("dog") Dog dog ) {
-        
-        dogService.insertDog(dog);
+    public String doDogInsert(@ModelAttribute("dog") Dog dog) {
 
         return "adminView";
     }
