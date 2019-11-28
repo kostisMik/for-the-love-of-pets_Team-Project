@@ -150,7 +150,7 @@
                                             <div class="card-body">
                                                 <div class="row pb-2">
                                                     <div class="col-md-12">
-                                                        <h4>Pick your creteria</h4>
+                                                        <h4>Pick your criteria</h4>
                                                     </div>
                                                 </div>
                                                 <div class="row ">
