@@ -61,8 +61,7 @@ public class Dog implements Serializable {
     @Size(max = 45)
     @Column(name = "size")
     private String size;
-    @Basic(optional = false)
-    @NotNull
+    @Basic(optional = false)    
     @Column(name = "shelter_dog")
     private int shelterDog;
     @Size(max = 25)

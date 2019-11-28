@@ -7,7 +7,10 @@ package com.petplanet.try01.controller;
 
 import com.petplanet.try01.model.Dog;
 import com.petplanet.try01.model.User;
+import com.petplanet.try01.repository.DogRepository;
+import com.petplanet.try01.repository.UserRepository;
 import com.petplanet.try01.services.UserService;
+import java.util.List;
 import javax.servlet.http.HttpSession;
 import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +19,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -32,6 +36,10 @@ public class MainController {
 
     @Autowired
     UserService uService;
+    @Autowired
+    DogRepository dr;
+    @Autowired
+    UserRepository ur;
 
     // GENERAL CONTROLLERS ( Navigating main page's links )
     // Go home by pressing logo ( WORKING )
@@ -46,6 +54,18 @@ public class MainController {
     public String adopt() {
 
         return "adopt";
+    }
+
+    @GetMapping("/adminadmin")
+    public String donate(ModelMap m) {
+
+        List<Dog> list = dr.findAllDogs();
+        List<User> userList = ur.findAllUsers();
+
+        m.addAttribute("Dog", list);
+        m.addAttribute("User", userList);
+
+        return "dogView";
     }
 
     // THE INSERT CONTROLLER ( GET & POST ) ( WORKING ?!? )
@@ -64,29 +84,46 @@ public class MainController {
         String hashed = BCrypt.hashpw(user.getPassword(), BCrypt.gensalt());
         user.setPassword(hashed);
         uService.insertUser(user);
-        session.removeAttribute("userlogin");
-//      user.setPassword(null);
         session.setAttribute("userlogin", user);
-        return "index";
+        return "login";
+    }
+
+    @GetMapping(value = "/insertdog")
+    public String insertDog(ModelMap m) {
+
+        m.addAttribute("doggy", new Dog());
+
+        return "insertdog";
+    }
+
+    @PostMapping("/dogForm")
+    public String dogForm(@ModelAttribute(name = "doggy") Dog d) {
+        uService.insertDoggy(d);
+
+        return "redirect:/adminadmin";
     }
 
     // THE LOGIN CONTROLLER 
     @GetMapping("/login")
-    public String loginPage() {
+    public String loginPage(HttpSession session) {
+        session.invalidate();
         return "login";
     }
 
-    @PostMapping("/adminLogged")
-    public String doLogin(@RequestParam(value = "email") String email, @RequestParam(value = "password") String password,
+    @PostMapping("/dologin")
+    public String doLogin(@RequestParam(value = "email") String email,
+            @RequestParam(value = "password") String password,
             HttpSession session) {
         User user = uService.findUserByEmail(email);
-//        boolean isValid = BCrypt.checkpw(password, user.getPassword());
-//        if( isValid ){
-//            session.removeAttribute("login");
-//            user.setPassword(null);
-//            session.setAttribute("login", user);
-//        }
-        return "adminView";
+        boolean isValid = BCrypt.checkpw(password, user.getPassword());
+        if (isValid == true) {
+            session.setAttribute("login", user);
+            return "index";
+
+        } else {
+            return "login";
+        }
+
     }
 
     @GetMapping("/logout")
@@ -95,19 +132,9 @@ public class MainController {
         return "login";
     }
 
-    // INSERT DOG LINK | ( ADMIN'S VIEW ) 
-    @GetMapping("/insertDog")
-    public String insertDog(ModelMap modelo) {
-        Dog dog = new Dog();
-        modelo.addAttribute(dog);
-
-        return "registerDog";
-    }
-
-    // INSERT DOG | POST Controller
-    @PostMapping(value = "/dogInserted")
-    public String doDogInsert(@ModelAttribute("dog") Dog dog) {
-
-        return "adminView";
+    @GetMapping("/delete/{dogId}")
+    public String delete(@PathVariable int dogId) {
+        dr.deleteById(dogId);
+        return "redirect:/adminadmin";
     }
 }

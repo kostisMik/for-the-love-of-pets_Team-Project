@@ -74,32 +74,32 @@
                 <div class="row">
                     <div class="col-lg-12">
 
-                        <spring:form modelAttribute="dog" id="contactForm" name="Registration" action="${pageContext.request.contextPath}/dogInserted" method="POST" >
+                        <spring:form modelAttribute="user" id="contactForm" name="Registration" action="${pageContext.request.contextPath}/inserted" method="POST" >
                             <div class="row">
                                 <div class="col-md-12 maindiv">
                                     <div class="form-group"> 
                                         <spring:label path="firstname"></spring:label>
                                         <spring:input path="firstname" class="form-control" placeholder="First Name" required="required"
-                    data-validation-required-message="Please enter your name."></spring:input>
+                                                      data-validation-required-message="Please enter your name."></spring:input>
                                             <p class="help-block text-danger"></p>
                                         </div>
                                         <div class="form-group">
                                         <spring:label path="lastname"></spring:label>
                                         <spring:input path="lastname" class="form-control" placeholder="Last Name" required="required"
-                    data-validation-required-message="Please enter your last name."></spring:input>
+                                                      data-validation-required-message="Please enter your last name."></spring:input>
                                             <p class="help-block text-danger"></p>
                                         </div>
                                         <div class="form-group">
                                         <spring:label path="email"></spring:label>
                                         <spring:input path="email" class="form-control" placeholder="Your Email" required="required"
-                    data-validation-required-message="Please enter your email address."></spring:input>
+                                                      data-validation-required-message="Please enter your email address."></spring:input>
                                             <p class="help-block text-danger"></p>
                                         </div>
                                         <div class="form-group">
-                                            
+
                                         <spring:label path="password"></spring:label>
                                         <spring:password path="password" class="form-control" placeholder="Password " required="required"
-                    data-validation-required-message="Please enter your password."></spring:password>
+                                                         data-validation-required-message="Please enter your password."></spring:password>
                                             <p class="help-block text-danger"></p>
                                         </div>
 
@@ -110,9 +110,9 @@
                                             <input id="Submit" class="btn btn-primary btn-xl text-uppercase" type="submit" value="Submit">
                                         </div>
                                     </div>
-                            </div>
-                            </spring:form>
-                        
+
+                                </div>
+                        </spring:form>
                     </div>
                 </div>
         </section>

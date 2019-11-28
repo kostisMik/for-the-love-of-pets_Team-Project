@@ -1,9 +1,8 @@
 <%-- 
-    Document   : login
-    Created on : Nov 20, 2019, 2:09:46 PM
+    Document   : registration
+    Created on : Nov 17, 2019, 6:39:34 PM
     Author     : Kostis.Mikroulis 
 --%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="spring"%>
@@ -12,67 +11,24 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Registration</title>
         <!-- Bootstrap core CSS -->
-         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-          crossorigin="anonymous">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-
-    <style type="text/css">
-        body {
-            background-image: url("https://www.discovergreece.com/~/media/images/highlight-large-images/az/a/athens-city/acropolis-and-the-parthenon-at-night.ashx");
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        .bslf {
-            width: 350px;
-            margin: 120px auto;
-            padding: 25px 20px;
-            background: #3a1975;
-            box-shadow: 2px 2px 4px #ab8de0;
-            border-radius: 5px;
-            color: #fff;
-        }
-        .bslf h2 {
-            margin-top: 0px;
-            margin-bottom: 15px;
-            padding-bottom: 5px;
-            border-radius: 10px;
-            border: 1px solid #25055f;
-        }
-        .bslf a {
-            color: #783ce2;
-        }
-        .bslf a:hover {
-            text-decoration: none;
-            color: #03A9F4;
-        }
-        .bslf .checkbox-inline {
-            padding-top: 7px;
-        }
-        .p {
-            margin-top: 50px;
-            font-size: 50px;
-            text-align: center;
-            color: #ccffcc;
-        }
-        .error {
-            text-align: center;
-            background-color: antiquewhite;
-          border: 1px red solid;
-            color: black;
-        }
-    </style>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Custom fonts for this template -->
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
+              type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
 
         <!-- Custom styles for this template -->
-        <link href="resources/css/style_login.css" rel="stylesheet">
-        <title>Log in</title>
+        <link href="resources/css/style_reg.css" rel="stylesheet">
+
     </head>
-    <body>
+    <body id="page-top">
+
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
@@ -99,7 +55,7 @@
                             <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/register">Register</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger bar-li" href="#">Log in</a>
+                            <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/login">Log in</a>
                         </li>
                     </ul>
                 </div>
@@ -107,25 +63,57 @@
         </nav>
 
         <!-- Contact -->
-       <div class="bslf">
-    <form action="${pageContext.request.contextPath}/dologin" method="post">
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading text-uppercase">Insert new Dog</h2>
 
-        <h2 class="text-center">Please login</h2>
-        <div class="form-group">
-            <input type="text" class="form-control" name="email" placeholder="Username" required="required">
-        </div>
-        <div class="form-group">
-            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
-        </div>
-        <div class="form-group clearfix">
-            <button type="submit" class="btn btn-primary pull-right">Log in</button>
-        </div>
-        <p>You are not a member yet? Sign up below!</p>
-        <div class="clearfix">
-            <a href="${pageContext.request.contextPath}/register" class="pull-right">Create an Account</a>
-        </div>
-    </form>
-</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <spring:form modelAttribute="doggy" action="dogForm" method="post">
+
+
+                            <div class="form-group">
+                                <spring:input path="name" type="text" name="name" class="form-control"
+                                              placeholder="name"/>
+                            </div>
+
+                            <div class="form-group">
+                                <spring:input type="text" path="gender" name="gender" class="form-control" placeholder="gender"/>
+                            </div>
+                            <div class="form-group">
+                                <spring:input type="text" path="chip" name="chip" class="form-control"
+                                              placeholder="chip"/>
+                            </div>
+                            <div class="form-group">
+                                <spring:input type="text" path="size" name="size" class="form-control"
+                                              placeholder="size"/>
+                            </div>
+                            <div class="form-group">
+
+                                <spring:input type="text" path="birthdate" name="birthdate" class="form-control"
+                                              placeholder="birthdate"/>
+                            </div>
+
+
+
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <input type="submit" value="Submit" class="btn btn-primary btn-xl text-uppercase"
+                                       tabindex="8">
+                            </div>
+
+
+                        </spring:form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Footer -->
         <footer class="footer">
