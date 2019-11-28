@@ -51,8 +51,10 @@ public class MainController {
 
     // ( WORKING )
     @GetMapping("/adopt")
-    public String adopt() {
-
+    public String adopt(ModelMap modelo) {
+        List<Dog> list = dr.findAllDogs();
+        modelo.addAttribute("Dog", list);
+        
         return "adopt";
     }
 
