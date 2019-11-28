@@ -138,7 +138,7 @@
                         <hr>
                     </div>
                 </div>
-                </div>
+                /div>
             <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -453,7 +453,7 @@
                         <div class="col-md-3 vertical-box">
                             <div class="card">
                                 <img class="card-img-top text-center"
-                                     src="resources/images/adoption/OSMAN.jpg"
+                                     src="resources/images/adoption/OSMAN.jpg..jpg"
                                      alt="Card image">
                                 <div class="card-body">
                                     <h4 class="card-title text-center">Osman</h4>

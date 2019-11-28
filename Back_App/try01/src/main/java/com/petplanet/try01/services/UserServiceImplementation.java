@@ -5,7 +5,9 @@
  */
 package com.petplanet.try01.services;
 
+import com.petplanet.try01.model.Dog;
 import com.petplanet.try01.model.User;
+import com.petplanet.try01.repository.DogRepository;
 import com.petplanet.try01.repository.UserRepository;
 import java.util.List;
 import javax.transaction.Transactional;
@@ -23,6 +25,9 @@ public class UserServiceImplementation implements UserService {
     
     @Autowired
     UserRepository uRepository;
+    
+    @Autowired
+    DogRepository dRepository;
     
     @Override
     public void insertUser(User user) {
@@ -42,6 +47,16 @@ public class UserServiceImplementation implements UserService {
     @Override
     public User findUserByEmail(String email) {
         return uRepository.findByEmail(email);
+    }
+
+    @Override
+    public Dog findDogByName(String name) {
+       return dRepository.findByName(name); 
+    }
+
+    @Override
+    public void insertDoggy(Dog d) {
+        dRepository.save(d);
     }
     
 }

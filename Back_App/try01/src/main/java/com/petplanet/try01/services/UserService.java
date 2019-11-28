@@ -5,6 +5,7 @@
  */
 package com.petplanet.try01.services;
 
+import com.petplanet.try01.model.Dog;
 import com.petplanet.try01.model.User;
 import java.util.List;
 
@@ -21,5 +22,9 @@ public interface UserService {
     public List<User> findUserByFirstName( String firstname );
     
     public User findUserByEmail(String email);
+    
+    public Dog findDogByName(String name);
+    
+    public void insertDoggy(Dog d);
     
 }

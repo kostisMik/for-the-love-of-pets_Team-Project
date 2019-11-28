@@ -54,7 +54,7 @@
                         </li>
                         <li class="nav-item">
                             <!--  TO-DO CONTROLLER ( OPENS PAYPAL SANDBOX ) - Use for validation of login too  -->
-                            <a class="nav-link js-scroll-trigger bar-li" href="#">Donate</a>
+                            <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/donate">Donate</a>
                         </li>
                         <li class="nav-item">
                             <!--  INSERT CONTROLLER -->
