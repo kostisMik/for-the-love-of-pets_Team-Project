@@ -16,6 +16,6 @@
     <body>
         <h1>Payment Success</h1>
 
-	<a href="/"> Build your tree >> </a>
+	<a href="${pageContext.request.contextPath}/"> Return Home >> </a>
     </body>
 </html>

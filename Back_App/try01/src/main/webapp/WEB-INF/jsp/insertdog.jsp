@@ -49,7 +49,7 @@
                             <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/adopt">Adopt</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger bar-li" href="#">Donate</a>
+                            <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/donate">Donate</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/register">Register</a>
