@@ -45,7 +45,7 @@
                         </c:forEach>
                     </tbody>
                 </table>
-                <a href="homepage.htm" id="home">Retun to Homepage</a>
+                <a href="${pageContext.request.contextPath}/" id="home">Retun to Homepage</a>
             </div>
         </div>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"

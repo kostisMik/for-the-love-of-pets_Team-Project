@@ -135,6 +135,7 @@
                         <hr>
                     </div>
                 </div>
+<<<<<<< HEAD
             </div>   
 
             <div class="container">
@@ -177,6 +178,91 @@
                     <br>
                 </c:forEach>
             </div>
+=======
+                /div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-brand" role="tabpanel"
+                                     aria-labelledby="nav-brand-tab">
+                                    <div class="row py-5 my-4">
+                                        <div class="col-md-12">
+                                            <div class="card-body">
+                                                <div class="row pb-2">
+                                                    <div class="col-md-12">
+                                                        <h4>Pick your creteria</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row ">
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <select id="inputState" class="form-control">
+                                                                <option selected>... Select Gender...</option>
+                                                                <option>Male</option>
+                                                                <option>Female</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <select id="inputState" class="form-control">
+                                                                <option selected>... Select Size...</option>
+                                                                <option>Toy</option>
+                                                                <option>Small</option>
+                                                                <option>Medium</option>
+                                                                <option>Large</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <button type="button" class="btn btn-primary btn-block">Search</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="title h1 text-center">Pick your dog</div>
+                    <c:forEach items="${Dog}" var="d">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-md-7 px-3">
+                                    <div class="card-block px-6">
+                                        <h4 class="card-title">Horizontal Card with Carousel - Bootstrap 4 </h4>
+                                        <p class="card-text">
+                                            The Carousel code can be replaced with an img src, no problem. The added CSS brings shadow to the card and some adjustments to the prev/next buttons and the indicators is rounded now. As in Bootstrap 3
+                                        </p>
+                                        <p class="card-text">Made for usage, commonly searched for. Fork, like and use it. Just move the carousel div above the col containing the text for left alignment of images</p>
+                                        <br>
+                                        <a href="#" class="mt-auto btn btn-primary  ">Adopt me</a>
+                                    </div>
+                                </div>
+                                <!-- Carousel start -->
+                                <div class="col-md-5">
+                                    <div>
+                                        
+                                        <img class="card-img-top mh200-text "
+                                             src="resources/images/adoption/${d.name}.jpg"
+                                             alt="Dog image">
+                                        <div class="card-body">
+                                            <h4 class="card-title text-center">${d.name}</h4>
+                                         
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <br>
+                    </c:forEach>
+                </div>
+>>>>>>> c32b69f53e97c76e5899377aee796eea2b2f785e
 
 
         </section>

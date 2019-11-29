@@ -70,28 +70,43 @@
                     <div class="col-lg-12">
                         <form action="${pageContext.request.contextPath}/dologin" method="post">
 
+<<<<<<< HEAD
 
+=======
+                            
+>>>>>>> c32b69f53e97c76e5899377aee796eea2b2f785e
                             <div class="form-group">
                                 <input type="text" class="form-control" name="email" placeholder="Username" required="required">
                             </div>
                             <div class="form-group">
                                 <input type="password" class="form-control" name="password" placeholder="Password" required="required">
                             </div>
+<<<<<<< HEAD
                             <div>
                                 
                                 <a href="register">Not a user? Press here to create a new account</a>
                             </div>
+=======
+>>>>>>> c32b69f53e97c76e5899377aee796eea2b2f785e
                             <div class="clearfix">
                                 <div class="col-lg-12 text-center">
                                     <div id="success"></div>
                                     <button type="submit" class="btn btn-primary btn-xl text-uppercase">Log in</button>
                                 </div>
+<<<<<<< HEAD
 
                             </div>
 
 
 
 
+=======
+                            </div>
+
+
+
+
+>>>>>>> c32b69f53e97c76e5899377aee796eea2b2f785e
                         </form>
                     </div>
                 </div>

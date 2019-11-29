@@ -54,6 +54,7 @@
             </section>
             <!-- End Banner Area -->
 
+<<<<<<< HEAD
 
             <script src="js/vendor/jquery-2.2.4.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
@@ -63,6 +64,9 @@
             <script src="js/jquery.nice-select.min.js"></script>
             <script src="js/jquery.magnific-popup.min.js"></script>
             <script src="js/main.js"></script>
+=======
+	<a href="${pageContext.request.contextPath}/"> Return Home >> </a>
+>>>>>>> c32b69f53e97c76e5899377aee796eea2b2f785e
     </body>
 </html>
 

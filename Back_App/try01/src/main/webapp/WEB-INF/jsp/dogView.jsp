@@ -147,8 +147,14 @@
                                 </tbody>
                             </c:forEach>
 
+<<<<<<< HEAD
                         </table>
                     </form>
+=======
+                            </table>
+                        </form>
+                    </div>
+>>>>>>> c32b69f53e97c76e5899377aee796eea2b2f785e
                 </div>
             </div>
         </div>
