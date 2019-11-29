@@ -25,9 +25,8 @@
         <link href="resources/css/style.css" rel="stylesheet">
     </head>
     <body>
-  
+
         <!-- NAVIGATON BAR -->
-        
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
                 <!-- LOGO -->
@@ -44,7 +43,7 @@
                     <ul class="navbar-nav text-uppercase ml-auto">
                         <li class="nav-item">
                             <!--  TO-DO CONTROLLER -->
-                            <a class="nav-link js-scroll-trigger bar-li" href="${pageContext.request.contextPath}/index/#about">About us</a>
+                            <a class="nav-link js-scroll-trigger bar-li" href="#about">About us</a>
                         </li>
                         <li class="nav-item">
                             <!--  !DONE! ADOPT CONTROLLER -->
@@ -67,21 +66,23 @@
             </div>
         </nav>
 
-        <section class="page-section" id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
 
-                        <h2>Our dogs</h2>
-                        <form modelAttribute="doggy" action="showDogs" method="post" enctype="multipart/form-data"
-                              style="text-align: center;">
-                            <table class="table table-striped table-light" border="1" style="margin: auto; width: 70%;" bgcolor="grey">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+
+                    <h2>Our dogs</h2>
+                    <form modelAttribute="doggy" action="showDogs" method="post" enctype="multipart/form-data"
+                          style="text-align: center;">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-light"  border="2" style="margin: auto; width: 100%;" bgcolor="grey">
                                 <thead>
                                     <tr>
-                                        <th>Name</th>
-                                        <th>Gender</th>
-                                        <th>Size</th>
-                                        <th>Birthdate</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Gender</th>
+                                        <th scope="col">Size</th>
+                                        <th scope="col">Birthdate</th>
                                         <th>Delete</th>
                                     </tr>
                                 </thead>
@@ -104,95 +105,111 @@
                                 </c:forEach>
 
                             </table>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <br>
-            <br>
-            <br>
-            <div class="text-center">
-                    
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="${pageContext.request.contextPath}/insertdog"> Insert Doggy</a> 
-            </div>
-                        
-
-            <br>
-            <br>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-
-                        <h2>Our Users</h2>
-                        <form modelAttribute="users" action="showUsers" method="post" enctype="multipart/form-data"
-                              style="text-align: center;">
-                            <table class="table table-striped table-light" border="1" style="margin: auto; width: 70%;" bgcolor="grey">
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Email</th>
-                                    </tr>
-                                </thead>
-                                <c:forEach items="${User}" var="u">
-                                    <tbody>
-                                        <tr>
-                                            <td scope="col" style="background-color: darkgrey">${u.firstname} ${u.lastname}</td>
-                                            <td scope="col" style="background-color: darkgrey">${u.email}</td>
-                                        </tr>
-
-
-                                    </tbody>
-                                </c:forEach>
-
-                            </table>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </section>
+        <br>
+        <br>
+        <br>
+        <div class="text-center">
 
-    <footer class="footer">
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="${pageContext.request.contextPath}/insertdog"> Insert Doggy</a> 
+        </div>
+
+
+        <br>
+        <br>
+
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2019</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="icon ion-logo-facebook"></i>
+            <div class="row">
+                <div class="col-lg-12 text-center">
 
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="icon ion-logo-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="icon ion-logo-twitter"></i>
+                    <h2>Our Users</h2>
+                    <form modelAttribute="users" action="showUsers" method="post" enctype="multipart/form-data"
+                          style="text-align: center;">
+                        <table class="table table-striped table-light" border="1" style="margin: auto; width: 70%;" bgcolor="grey">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                </tr>
+                            </thead>
+                            <c:forEach items="${User}" var="u">
+                                <tbody>
+                                    <tr>
+                                        <td scope="col" style="background-color: darkgrey">${u.firstname} ${u.lastname}</td>
+                                        <td scope="col" style="background-color: darkgrey">${u.email}</td>
+                                    </tr>
 
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li class="list-inline-item">
-                            <a href="#">About us</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
+
+                                </tbody>
+                            </c:forEach>
+
+                        </table>
+                    </form>
                 </div>
             </div>
         </div>
-    </footer>
 
+    </div>
+    <br>
+    
+        <footer class="footer">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <span class="copyright">Copyright &copy; Your Website 2019</span>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="icon ion-logo-facebook"></i>
+
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="icon ion-logo-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="icon ion-logo-twitter"></i>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline quicklinks">
+                            <li class="list-inline-item">
+                                <a href="#">About us</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Terms of Use</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+  
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency1.min.js"></script>
 </body>
+
+</html>

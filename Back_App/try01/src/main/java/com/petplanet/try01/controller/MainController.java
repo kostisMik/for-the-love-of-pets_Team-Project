@@ -97,7 +97,13 @@ public class MainController {
 
         return "insertdog";
     }
+     @GetMapping(value = "/adoptdog")
+    public String adoptDog() {
 
+        
+
+        return "adoptdog";
+    }
     @PostMapping("/dogForm")
     public String dogForm(@ModelAttribute(name = "doggy") Dog d) {
         uService.insertDoggy(d);

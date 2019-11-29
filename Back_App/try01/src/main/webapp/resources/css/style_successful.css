@@ -1,0 +1,402 @@
+
+  body {
+    color: #777777;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5em;
+    position: relative;
+  }
+  
+  ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  select {
+    display: block;
+  }
+  
+  figure {
+    margin: 0;
+  }
+  
+  a {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  
+  iframe {
+    border: 0;
+  }
+  
+  a, a:focus, a:hover {
+    text-decoration: none;
+    outline: 0;
+    color: #777777;
+  }
+  
+  .btn.active.focus,
+  .btn.active:focus,
+  .btn.focus,
+  .btn.focus:active,
+  .btn:active:focus,
+  .btn:focus {
+    text-decoration: none;
+    outline: 0;
+  
+  }
+  
+  .card-panel {
+    margin: 0;
+    padding: 60px;
+  }
+  
+  /**
+   *  Typography
+   *
+   **/
+  .btn i, .btn-large i, .btn-floating i, .btn-large i, .btn-flat i {
+    font-size: 1em;
+    line-height: inherit;
+  }
+  
+  .gray-bg {
+    background: #f9f9ff;
+  }
+  
+  h1, h2, h3,
+  h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+    color: #222222;
+    line-height: 1.5em;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 500;
+  }
+  
+  
+  
+ 
+  
+  .display-table {
+    display: table;
+  }
+  
+  .light {
+    color: #fff;
+  }
+  
+  .dark {
+    color: #000;
+  }
+  
+  .relative {
+    position: relative;
+  }
+  
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  
+  .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .container.fullwidth {
+    width: 100%;
+  }
+  
+  .container.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .no-padding {
+    padding: 0;
+  }
+  
+  .section-bg {
+    background: #f9fafc;
+  }
+  
+  @media (max-width: 767px) {
+    .no-flex-xs {
+      display: block !important;
+    }
+  }
+  
+  .row.no-margin {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .sample-text-area {
+    background: #fff;
+    padding: 100px 0 70px 0;
+  }
+  
+  .text-heading {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+  
+  b, i, sup, sub, u, del {
+    color: #df003a;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
+  
+  h3 {
+    font-size: 24px;
+  }
+  
+  h4 {
+    font-size: 18px;
+  }
+  
+  h5 {
+    font-size: 16px;
+  }
+  
+  h6 {
+    font-size: 14px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.5em;
+  }
+  
+  .typography h1, .typography h2, .typography h3, .typography h4, .typography h5, .typography h6 {
+    color: #777777;
+  }
+  
+  .button-area {
+    background: #fff;
+  }
+  
+  .button-area .border-top-generic {
+    padding: 70px 15px;
+    border-top: 1px dotted #eee;
+  }
+  
+  .button-group-area .genric-btn {
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  
+  .button-group-area .genric-btn:last-child {
+    margin-right: 0;
+  }
+  
+  
+
+  
+  @media (max-width: 1199px) {
+    .default-header {
+      padding: 20px 30px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .default-header {
+      padding: 20px 15px;
+    }
+  }
+  
+ 
+  
+  @media (max-width: 767px) {
+    nav {
+      margin-right: 0;
+      position: absolute;
+      right: 0;
+      top: 47px;
+      text-align: right;
+      padding: 20px 0;
+      z-index: 5;
+      background: #fff;
+    }
+  }
+  
+  
+  @media (max-width: 767px) {
+    nav a {
+      margin: 5px 25px;
+    }
+  }
+  
+  nav a:hover {
+    border-color: #BF5C8E;
+    box-shadow: none;
+  }
+  
+  
+  
+  .dup-body {
+    /* background:#BF5C8E; */
+    background-color: rgba(133, 187, 133, 0.486);
+   
+  }
+  
+  .dup-body-wrap {
+    box-shadow: 0px 0px 50px 0px rgba(95, 10, 10, 0.2);
+    margin: 50px;
+    position: relative;
+  }
+  
+  @media (max-width: 767px) {
+    .dup-body-wrap {
+      margin: 30px;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .dup-body-wrap {
+      margin: 10px;
+    }
+  }
+  
+  @media (max-width: 1199px) {
+    .container {
+      padding: 0 30px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .container {
+      padding: 0 15px;
+    }
+  }
+  
+  .section-gap {
+    padding: 120px 0;
+  }
+  
+  .primary-btn {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    line-height: 42px;
+    padding-left: 30px;
+    padding-right: 60px;
+    border-radius: 25px;
+    background: transparent;
+    border: 1px solid #BF5C8E;
+    color: #BF5C8E;
+    display: inline-block;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+  }
+  
+  .primary-btn:focus {
+    outline: none;
+  }
+  
+  .primary-btn span {
+    color: #222222;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    right: 30px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .primary-btn:hover {
+    background: #BF5C8E;
+    color: #fff;
+  }
+  
+  .primary-btn:hover span {
+    color: #fff;
+    right: 20px;
+  }
+  
+  .primary-btn.white {
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  
+  .primary-btn.white span {
+    color: #fff;
+  }
+  
+  .primary-btn.white:hover {
+    background: #fff;
+    color: #e0003b;
+  }
+  
+  .primary-btn.white:hover span {
+    color: #e0003b;
+  }
+  
+  .banner-area {
+    background: #fff;
+  }
+  
+  @media (max-width: 767px) {
+    .banner-area .fullscreen {
+      height: 800px !important;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .banner-content {
+      margin-top: 100px;
+    }
+  }
+  
+  .banner-content h1 {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.15em;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 991px) {
+    .banner-content h1 {
+      font-size: 36px;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .banner-content h1 br {
+      display: none;
+    }
+  }
+  
+  .banner-content p {
+    margin-bottom: 60px;
+    font-size: 16px;
+  }
+  
+  @media (max-width: 767px) {
+    .banner-content p {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .banner-content p br {
+      display: none;
+    }
+  }
+  
+ 
