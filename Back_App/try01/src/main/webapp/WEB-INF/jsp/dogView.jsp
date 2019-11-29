@@ -27,6 +27,7 @@
     <body>
   
         <!-- NAVIGATON BAR -->
+        
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
                 <!-- LOGO -->
@@ -92,7 +93,7 @@
                                             <td scope="col" style="background-color: darkgrey">${d.size}</td>
                                             <td scope="col" style="background-color: darkgrey">${d.birthdate}</td>
                                             <td>
-                                                <a href="${pageContext.request.contextPath}/delete/${d.dogId}" method="get"><i class="icon ion-md-trash"></i></button>
+                                                <a href="${pageContext.request.contextPath}/delete/${d.dogId}" method="get"><i class="icon ion-md-trash" style="font-size:16px;color:red"></i></button>
                                             </td>
 
 
@@ -145,7 +146,7 @@
                                 </c:forEach>
 
                             </table>
-                        </form
+                        </form>
                     </div>
                 </div>
             </div>

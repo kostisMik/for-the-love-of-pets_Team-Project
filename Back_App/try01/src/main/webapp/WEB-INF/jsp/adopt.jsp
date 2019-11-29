@@ -25,6 +25,7 @@
         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
               type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
         <!-- Custom styles for this template -->
 
@@ -100,8 +101,7 @@
                             Adoption saves an animal.If you are eligible in offering a “home” to one of our wonderful
                             animals in our Shelter, you will be rewarded with unconditional love and devotion.Many animals then are found abandoned, helplessly wondering the streets and end up struggling
                             for survival or simply don’t make it through.
-                            Adoption saves an animal.If you are eligible in offering a “home” to one of our wonderful
-                            animals in our Shelter, you will be rewarded with unconditional love and devotion. 
+                            When you adopt one of our dogs (if you are located in Athens), you also get a free training session with a professional trainer, as well as 6 months of free food through the PEDIGREE responsible adoption program.
                         </p><br>
                     </div>
                     <div class="col-md-4">
@@ -113,15 +113,12 @@
                     </div>
                     <div class="col-md-8">
 
-                        <p class="text-muted adopt-context">It’s a fact that the population of pets in the world exceeds the number of
-                            families who can take them in.
-                            Many animals then are found abandoned, helplessly wondering the streets and end up struggling
-                            for survival or simply don’t make it through.
-                            Adoption saves an animal.If you are eligible in offering a “home” to one of our wonderful
-                            animals in our Shelter, you will be rewarded with unconditional love and devotion.Many animals then are found abandoned, helplessly wondering the streets and end up struggling
-                            for survival or simply don’t make it through.
-                            Adoption saves an animal.If you are eligible in offering a “home” to one of our wonderful
-                            animals in our Shelter, you will be rewarded with unconditional love and devotion.
+                        <p class="text-muted adopt-context">
+                            Consider adopting a dog from PawSociety and giving it the love that it so desperately needs. You will have a friend for life and will have helped to take yet one more animal off the street.Consider adopting a dog and giving it the love that it so desperately needs. You will have a friend for life and will have helped to take yet one more animal off the street.
+
+                            Under the category “Find” you will find photographs of each animal, as well as a brief description and history.
+
+                            Our furry friends are given for adoption fully vaccinated, neutered, micro-chipped and with an up to date medical book and adoption papers. We also provide training advice to help you have an even more enjoyable experience with your new family member. If you adopt a kitten or puppy which is too young to be neutered, you will have to neuter it at the appropriate age, as described also in the adoption contract you sign.
                         </p><br>
 
                     </div>
@@ -138,407 +135,66 @@
                         <hr>
                     </div>
                 </div>
-                /div>
+            </div>   
+
             <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="tab-content" id="nav-tabContent">
-                                <div class="tab-pane fade show active" id="nav-brand" role="tabpanel"
-                                    aria-labelledby="nav-brand-tab">
-                                    <div class="row py-5 my-4">
-                                        <div class="col-md-12">
-                                            <div class="card-body">
-                                                <div class="row pb-2">
-                                                    <div class="col-md-12">
-                                                        <h4>Pick your criteria</h4>
-                                                    </div>
+                <c:forEach items="${Dog}" var="d">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-7 px-3 text-center">
+                                <div class="card-block px-6">
+                                    <h2 class="card-title text-center text-uppercase">${d.name}</h2>
+                                    <p class="card-text">
+                                    <h4 class="card-title text-center">Gender : ${d.gender}</h4>
+                                    </p>
+                                    <h4 class="card-title text-center">Chip : ${d.chip}</h4>
+                                    <p>
+                                    <h4 class="card-title text-center">Size : ${d.size}</h4>
+                                    </p>
+                                    <p> 
+                                    <h4 class="card-title text-center">Birthdate : ${d.birthdate}</h4>
+                                    </p>
+
+                                    <br>
+                                    <button type="button" class="btn mt-auto btn btn-primary" data-toggle="modal" data-target="#myModal">Adopt me</button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="myModal" role="dialog">
+                                        <div class="modal-dialog modal-sm">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                    <h4 class="modal-title">Modal Header</h4>
                                                 </div>
-                                                <div class="row ">
-                                                    <div class="col-md-3">
-                                                        <div class="form-group">
-                                                            <select id="inputState" class="form-control">
-                                                                <option selected>... Select Gender...</option>
-                                                                <option>Male</option>
-                                                                <option>Female</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <div class="form-group">
-                                                            <select id="inputState" class="form-control">
-                                                                <option selected>... Select Size...</option>
-                                                                <option>Toy</option>
-                                                                <option>Small</option>
-                                                                <option>Medium</option>
-                                                                <option>Large</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <button type="button" class="btn btn-primary btn-block">Search</button>
-                                                    </div>
+                                                <div class="modal-body">
+                                                    <p>This is a small modal.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row py-2">
-                        <div class="col-md-3 vertical-box">
-                            <div class="card">
-                                <img class="card-img-top mh200-text "
-                                     src="resources/images/adoption/dias.jpg"
-                                     alt="Dog image">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Dias</h4>
-                                    <button type="button" class="btn btn-primary btn-block">Meet him
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 vertical-box">
-                            <div class="card">
-                                <img class="card-img-top mh200-text"
-                                     src="resources/images/adoption/kira.jpg"
-                                     alt="Card image">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Kira</h4>
-                                    <button type="button" class="btn btn-primary btn-block">Meet her
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 vertical-box">
-                            <div class="card">
-                                <img class="card-img-top mh200-text"
-                                     src="resources/images/adoption/shagar.jpg"
-                                     alt="Card image">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Shagar</h4>
-                                    <button type="button" class="btn btn-primary btn-block">Meet him
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 vertical-box">
-                            <div class="card">
-                                <img class="card-img-top mh200-text"
-                                     src="resources/images/adoption/haris.jpg"
-                                     alt="Card image">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Haris</h4>
-                                    <button type="button" class="btn btn-primary btn-block">Meet him</button>
+                            <!-- Dog photo -->
+                            <div class="col-md-5">
+                                <div>
+
+                                    <img class="card-img-top mh200-text "
+                                         src="resources/images/adoption/${d.name}.jpg"
+                                         alt="Dog image">
+                                    <div class="card-body">
+
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                     </div>
-                    <div class="row py-2">
-                        <div class="col-md-3 vertical-box">
-                            <div class="card">
-                                <img class="card-img-top mh200-text"
-                                     src="resources/images/adoption/vilma4.jpg.1920x0_q85.jpg"
-                                     alt="Dog image">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Vilma</h4>
-                                    <button type="button" class="btn btn-primary btn-block">Meet him
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 vertical-box">
-                            <div class="card">
-                                <img class="card-img-top text-center"
-                                     src="resources/images/adoption/anna.jpg"
-                                     alt="Card image">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Anna</h4>
-                                    <button type="button" class="btn btn-primary btn-block">Meet her
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 vertical-box">
-                            <div class="card">
-                                <img class="card-img-top text-center"
-                                     src="resources/images/adoption/Billy.jpg"
-                                     alt="Card image">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Billy</h4>
-                                    <button type="button" class="btn btn-primary btn-block">Meet him
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 vertical-box">
-                            <div class="card">
-                                <img class="card-img-top text-center"
-                                     src="resources/images/adoption/Kali.jpg"
-                                     alt="Card image">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Kali</h4>
-                                    <button type="button" class="btn btn-primary btn-block">Meet her</button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="row py-2">
-                        <div class="col-md-3 vertical-box">
-                            <div class="card">
-                                <img class="card-img-top mh200-text"
-                                     src="resources/images/adoption/artemis.jpg"
-                                     alt="Dog image">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Artemis</h4>
-                                    <button type="button" class="btn btn-primary btn-block">Meet her
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 vertical-box">
-                            <div class="card">
-                                <img class="card-img-top text-center"
-                                     src="resources/images/adoption/Athina.jpg"
-                                     alt="Card image">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Athina</h4>
-                                    <button type="button" class="btn btn-primary btn-block">Meet her
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 vertical-box">
-                            <div class="card">
-                                <img class="card-img-top text-center"
-                                     src="resources/images/adoption/barbie.png"
-                                     alt="Card image">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Barbie</h4>
-                                    <button type="button" class="btn btn-primary btn-block">Meet her
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 vertical-box">
-                            <div class="card">
-                                <img class="card-img-top text-center"
-                                     src="resources/images/adoption/Box.jpg"
-                                     alt="Card image">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Box</h4>
-                                    <button type="button" class="btn btn-primary btn-block">Meet him</button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="row py-2">
-                        <div class="col-md-3 vertical-box">
-                            <div class="card">
-                                <img class="card-img-top mh200-text"
-                                     src="resources/images/adoption/Dora.jpg"
-                                     alt="Dog image">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Dora</h4>
-                                    <button type="button" class="btn btn-primary btn-block">Meet her
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 vertical-box">
-                            <div class="card">
-                                <img class="card-img-top text-center"
-                                     src="resources/images/adoption/hercules.jpg"
-                                     alt="Card image">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Hercules</h4>
-                                    <button type="button" class="btn btn-primary btn-block">Meet him
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 vertical-box">
-                            <div class="card">
-                                <img class="card-img-top text-center"
-                                     src="resources/images/adoption/Ice.jpg"
-                                     alt="Card image">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Ice</h4>
-                                    <button type="button" class="btn btn-primary btn-block">Meet him
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 vertical-box">
-                            <div class="card">
-                                <img class="card-img-top text-center"
-                                     src="resources/images/adoption/ilias.jpg"
-                                     alt="Card image">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Ilias</h4>
-                                    <button type="button" class="btn btn-primary btn-block">Meet him</button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="row py-2">
-                        <div class="col-md-3 vertical-box">
-                            <div class="card">
-                                <img class="card-img-top mh200-text"
-                                     src="resources/images/adoption/Loco2.jpg"
-                                     alt="Dog image">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Loco</h4>
-                                    <button type="button" class="btn btn-primary btn-block">Meet him
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 vertical-box">
-                            <div class="card">
-                                <img class="card-img-top text-center"
-                                     src="resources/images/adoption/magic.JPG"
-                                     alt="Card image">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Magic</h4>
-                                    <button type="button" class="btn btn-primary btn-block">Meet him
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 vertical-box">
-                            <div class="card">
-                                <img class="card-img-top text-center"
-                                     src="resources/images/adoption/maous (2).jpg"
-                                     alt="Card image">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Maous</h4>
-                                    <button type="button" class="btn btn-primary btn-block">Meet him
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 vertical-box">
-                            <div class="card">
-                                <img class="card-img-top text-center"
-                                     src="resources/images/adoption/marion.jpg"
-                                     alt="Card image">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Marion</h4>
-                                    <button type="button" class="btn btn-primary btn-block">Meet her</button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="row py-2">
-                        <div class="col-md-3 vertical-box">
-                            <div class="card">
-                                <img class="card-img-top mh200-text"
-                                     src="resources/images/adoption/misti.jpg"
-                                     alt="Dog image">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Misti</h4>
-                                    <button type="button" class="btn btn-primary btn-block">Meet her
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 vertical-box">
-                            <div class="card">
-                                <img class="card-img-top text-center"
-                                     src="resources/images/adoption/OSMAN.jpg..jpg"
-                                     alt="Card image">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Osman</h4>
-                                    <button type="button" class="btn btn-primary btn-block">Meet him
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 vertical-box">
-                            <div class="card">
-                                <img class="card-img-top text-center"
-                                     src="resources/images/adoption/popeye.jpg"
-                                     alt="Card image">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Popeye</h4>
-                                    <button type="button" class="btn btn-primary btn-block">Meet him
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 vertical-box">
-                            <div class="card">
-                                <img class="card-img-top text-center"
-                                     src="resources/images/adoption/richard.jpg"
-                                     alt="Card image">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Richard</h4>
-                                    <button type="button" class="btn btn-primary btn-block">Meet him</button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="row py-2">
-                        <div class="col-md-3 vertical-box">
-                            <div class="card">
-                                <img class="card-img-top mh200-text"
-                                     src="resources/images/adoption/rudy.jpg"
-                                     alt="Dog image">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Rudy</h4>
-                                    <button type="button" class="btn btn-primary btn-block">Meet him
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 vertical-box">
-                            <div class="card">
-                                <img class="card-img-top text-center"
-                                     src="resources/images/adoption/Sancy.jpg"
-                                     alt="Card image">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Sancy</h4>
-                                    <button type="button" class="btn btn-primary btn-block">Meet her
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 vertical-box">
-                            <div class="card">
-                                <img class="card-img-top text-center"
-                                     src="resources/images/adoption/singi.JPG"
-                                     alt="Card image">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Singi</h4>
-                                    <button type="button" class="btn btn-primary btn-block">Meet her
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 vertical-box">
-                            <div class="card">
-                                <img class="card-img-top text-center"
-                                     src="resources/images/adoption/Zagor!.jpg"
-                                     alt="Card image">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Zagor</h4>
-                                    <button type="button" class="btn btn-primary btn-block">Meet him</button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
+                    <br>
+                </c:forEach>
             </div>
 
 
@@ -590,6 +246,7 @@
 
 
         <!-- Bootstrap core JavaScript -->
+       
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
